@@ -1,0 +1,4205 @@
+{
+  "meta": {
+    "type": "auto-state-calculator-data",
+    "year": "2021",
+    "state": "TX"
+  },
+  "studentDriver": {
+    "student16F10camry": "2.98",
+    "student17F10camry": "2.77",
+    "student18F10camry": "2.69",
+    "student16M10camry": "3.35",
+    "student17M10camry": "3.10",
+    "student18M10camry": "3.00",
+    "student16F18Mustang": "4.19",
+    "student17F18Mustang": "3.82",
+    "student18F18Mustang": "3.67",
+    "student16M18Mustang": "4.83",
+    "student17M18Mustang": "4.39",
+    "student18M18Mustang": "4.21"
+  },
+  "nonCoreAge": {
+    "19-20": "2.41",
+    "21-22": "1.65",
+    "23-25": "1.36",
+    "26-29": "1.18"
+  },
+  "creditScores": {
+    "excellent": {
+      "minimum": "0.80",
+      "maximum": "0.85",
+      "average": "0.81"
+    },
+    "good": {
+      "minimum": "1.00",
+      "maximum": "1.00",
+      "average": "1.00"
+    },
+    "fair": {
+      "minimum": "1.10",
+      "maximum": "1.14",
+      "average": "1.24"
+    },
+    "belowFair": {
+      "minimum": "1.26",
+      "maximum": "1.36",
+      "average": "1.50"
+    },
+    "poor": {
+      "minimum": "1.55",
+      "maximum": "1.61",
+      "average": "1.82"
+    }
+  },
+  "profiles": {
+    "40FStateMinLOClean": {
+      "minimum": "$342",
+      "maximum": "$2,026",
+      "average": "$648"
+    },
+    "40FStateMinLOSpeed": {
+      "minimum": "$361",
+      "maximum": "$2,026",
+      "average": "$716"
+    },
+    "40FStateMinLOAccident": {
+      "minimum": "$490",
+      "maximum": "$2,561",
+      "average": "$1,019"
+    },
+    "40FStateMinLODUI": {
+      "minimum": "$520",
+      "maximum": "$2,274",
+      "average": "$995"
+    },
+    "40F50/100/50LOClean": {
+      "minimum": "$376",
+      "maximum": "$2,217",
+      "average": "$723"
+    },
+    "40F50/100/50LOSpeed": {
+      "minimum": "$423",
+      "maximum": "$2,217",
+      "average": "$798"
+    },
+    "40F50/100/50LOAccident": {
+      "minimum": "$521",
+      "maximum": "$2,771",
+      "average": "$1,142"
+    },
+    "40F50/100/50LODUI": {
+      "minimum": "$553",
+      "maximum": "$2,601",
+      "average": "$1,112"
+    },
+    "40F50/100/50CCClean": {
+      "minimum": "$684",
+      "maximum": "$3,329",
+      "average": "$1,133"
+    },
+    "40F50/100/50CCSpeed": {
+      "minimum": "$708",
+      "maximum": "$3,329",
+      "average": "$1,256"
+    },
+    "40F50/100/50CCAccident": {
+      "minimum": "$855",
+      "maximum": "$4,224",
+      "average": "$1,779"
+    },
+    "40F50/100/50CCDUI": {
+      "minimum": "$864",
+      "maximum": "$3,709",
+      "average": "$1,740"
+    },
+    "40F100/300/100CCClean": {
+      "minimum": "$747",
+      "maximum": "$4,145",
+      "average": "$1,259"
+    },
+    "40F100/300/100CCSpeed": {
+      "minimum": "$773",
+      "maximum": "$4,145",
+      "average": "$1,392"
+    },
+    "40F100/300/100CCAccident": {
+      "minimum": "$930",
+      "maximum": "$5,178",
+      "average": "$1,959"
+    },
+    "40F100/300/100CCDUI": {
+      "minimum": "$998",
+      "maximum": "$4,602",
+      "average": "$1,897"
+    },
+    "40MStateMinLOClean": {
+      "minimum": "$337",
+      "maximum": "$2,329",
+      "average": "$643"
+    },
+    "40MStateMinLOSpeed": {
+      "minimum": "$371",
+      "maximum": "$2,329",
+      "average": "$643"
+    },
+    "40MStateMinLOAccident": {
+      "minimum": "$468",
+      "maximum": "$2,955",
+      "average": "$1,013"
+    },
+    "40MStateMinLODUI": {
+      "minimum": "$498",
+      "maximum": "$2,619",
+      "average": "$988"
+    },
+    "40M50/100/50LOClean": {
+      "minimum": "$358",
+      "maximum": "$2,553",
+      "average": "$717"
+    },
+    "40M50/100/50LOSpeed": {
+      "minimum": "$417",
+      "maximum": "$2,553",
+      "average": "$790"
+    },
+    "40M50/100/50LOAccident": {
+      "minimum": "$497",
+      "maximum": "$3,201",
+      "average": "$1,134"
+    },
+    "40M50/100/50LODUI": {
+      "minimum": "$528",
+      "maximum": "$2,853",
+      "average": "$1,104"
+    },
+    "40M50/100/50CCClean": {
+      "minimum": "$664",
+      "maximum": "$3,838",
+      "average": "$1,151"
+    },
+    "40M50/100/50CCSpeed": {
+      "minimum": "$708",
+      "maximum": "$3,838",
+      "average": "$1,274"
+    },
+    "40M50/100/50CCAccident": {
+      "minimum": "$855",
+      "maximum": "$4,878",
+      "average": "$1,810"
+    },
+    "40M50/100/50CCDUI": {
+      "minimum": "$814",
+      "maximum": "$4,281",
+      "average": "$1,769"
+    },
+    "40M100/300/100CCClean": {
+      "minimum": "$698",
+      "maximum": "$4,792",
+      "average": "$1,277"
+    },
+    "40M100/300/100CCSpeed": {
+      "minimum": "$773",
+      "maximum": "$4,792",
+      "average": "$1,409"
+    },
+    "40M100/300/100CCAccident": {
+      "minimum": "$930",
+      "maximum": "$5,997",
+      "average": "$1,988"
+    },
+    "40M100/300/100CCDUI": {
+      "minimum": "$926",
+      "maximum": "$5,324",
+      "average": "$1,926"
+    },
+    "70FStateMinLOClean": {
+      "minimum": "$339",
+      "maximum": "$2,695",
+      "average": "$695"
+    },
+    "70FStateMinLOSpeed": {
+      "minimum": "$339",
+      "maximum": "$2,695",
+      "average": "$782"
+    },
+    "70FStateMinLOAccident": {
+      "minimum": "$488",
+      "maximum": "$3,430",
+      "average": "$1,156"
+    },
+    "70FStateMinLODUI": {
+      "minimum": "$580",
+      "maximum": "$3,035",
+      "average": "$1,086"
+    },
+    "70F50/100/50LOClean": {
+      "minimum": "$376",
+      "maximum": "$2,957",
+      "average": "$772"
+    },
+    "70F50/100/50LOSpeed": {
+      "minimum": "$444",
+      "maximum": "$2,957",
+      "average": "$861"
+    },
+    "70F50/100/50LOAccident": {
+      "minimum": "$545",
+      "maximum": "$3,718",
+      "average": "$1,287"
+    },
+    "70F50/100/50LODUI": {
+      "minimum": "$644",
+      "maximum": "$3,310",
+      "average": "$1,207"
+    },
+    "70F50/100/50CCClean": {
+      "minimum": "$645",
+      "maximum": "$4,156",
+      "average": "$1,153"
+    },
+    "70F50/100/50CCSpeed": {
+      "minimum": "$679",
+      "maximum": "$4,156",
+      "average": "$1,297"
+    },
+    "70F50/100/50CCAccident": {
+      "minimum": "$825",
+      "maximum": "$5,270",
+      "average": "$1,900"
+    },
+    "70F50/100/50CCDUI": {
+      "minimum": "$860",
+      "maximum": "$4,648",
+      "average": "$1,801"
+    },
+    "70F100/300/100CCClean": {
+      "minimum": "$685",
+      "maximum": "$5,278",
+      "average": "$1,291"
+    },
+    "70F100/300/100CCSpeed": {
+      "minimum": "$743",
+      "maximum": "$5,278",
+      "average": "$1,446"
+    },
+    "70F100/300/100CCAccident": {
+      "minimum": "$898",
+      "maximum": "$6,615",
+      "average": "$2,106"
+    },
+    "70F100/300/100CCDUI": {
+      "minimum": "$982",
+      "maximum": "$5,876",
+      "average": "$1,976"
+    },
+    "70MStateMinLOClean": {
+      "minimum": "$375",
+      "maximum": "$3,192",
+      "average": "$752"
+    },
+    "70MStateMinLOSpeed": {
+      "minimum": "$377",
+      "maximum": "$3,192",
+      "average": "$843"
+    },
+    "70MStateMinLOAccident": {
+      "minimum": "$488",
+      "maximum": "$4,076",
+      "average": "$1,242"
+    },
+    "70MStateMinLODUI": {
+      "minimum": "$626",
+      "maximum": "$3,601",
+      "average": "$1,161"
+    },
+    "70M50/100/50LOClean": {
+      "minimum": "$396",
+      "maximum": "$3,507",
+      "average": "$835"
+    },
+    "70M50/100/50LOSpeed": {
+      "minimum": "$444",
+      "maximum": "$3,507",
+      "average": "$927"
+    },
+    "70M50/100/50LOAccident": {
+      "minimum": "$545",
+      "maximum": "$4,423",
+      "average": "$1,383"
+    },
+    "70M50/100/50LODUI": {
+      "minimum": "$683",
+      "maximum": "$3,931",
+      "average": "$1,291"
+    },
+    "70M50/100/50CCClean": {
+      "minimum": "$676",
+      "maximum": "$4,984",
+      "average": "$1,260"
+    },
+    "70M50/100/50CCSpeed": {
+      "minimum": "$679",
+      "maximum": "$4,984",
+      "average": "$1,410"
+    },
+    "70M50/100/50CCAccident": {
+      "minimum": "$825",
+      "maximum": "$6,338",
+      "average": "$2,056"
+    },
+    "70M50/100/50CCDUI": {
+      "minimum": "$1,000",
+      "maximum": "$5,580",
+      "average": "$1,940"
+    },
+    "70M100/300/100CCClean": {
+      "minimum": "$712",
+      "maximum": "$6,333",
+      "average": "$1,411"
+    },
+    "70M100/300/100CCSpeed": {
+      "minimum": "$743",
+      "maximum": "$6,333",
+      "average": "$1,573"
+    },
+    "70M100/300/100CCAccident": {
+      "minimum": "$898",
+      "maximum": "$7,953",
+      "average": "$2,280"
+    },
+    "70M100/300/100CCDUI": {
+      "minimum": "$1,140",
+      "maximum": "$7,058",
+      "average": "$2,130"
+    }
+  },
+  "modelYear": [
+    {
+      "2011": "1.139",
+      "2012": "1.157",
+      "2013": "1.176",
+      "2014": "1.194",
+      "2015": "1.213",
+      "2016": "1.2309999999999999",
+      "2017": "1.335",
+      "2018": "1.354",
+      "2019": "1.33",
+      "2020": "1.3330000000000002",
+      "2021": "1.3659999999999999",
+      "type": "Electric"
+    },
+    {
+      "2005": "0.9490000000000001",
+      "2006": "0.934",
+      "2007": "0.92",
+      "2008": "0.955",
+      "2009": "0.991",
+      "2010": "1.026",
+      "2011": "1.0270000000000001",
+      "2012": "1.054",
+      "2013": "1.081",
+      "2014": "1.109",
+      "2015": "1.136",
+      "2016": "1.163",
+      "2017": "1.1840000000000002",
+      "2018": "1.203",
+      "2019": "1.215",
+      "2020": "1.24",
+      "2021": "1.2930000000000001",
+      "type": "Compact"
+    },
+    {
+      "2005": "0.935",
+      "2006": "0.9540000000000001",
+      "2007": "0.973",
+      "2008": "0.992",
+      "2009": "1.011",
+      "2010": "1.03",
+      "2011": "1.055",
+      "2012": "1.08",
+      "2013": "1.105",
+      "2014": "1.13",
+      "2015": "1.155",
+      "2016": "1.18",
+      "2017": "1.21",
+      "2018": "1.239",
+      "2019": "1.26",
+      "2020": "1.278",
+      "2021": "1.295",
+      "type": "Sedan"
+    },
+    {
+      "2005": "1.063",
+      "2006": "1.034",
+      "2007": "1.119",
+      "2008": "1.153",
+      "2009": "1.161",
+      "2010": "1.148",
+      "2011": "1.173",
+      "2012": "1.187",
+      "2013": "1.2009999999999998",
+      "2014": "1.45",
+      "2015": "1.429",
+      "2016": "1.409",
+      "2017": "1.436",
+      "2018": "1.454",
+      "2019": "1.4880000000000002",
+      "2020": "1.515",
+      "2021": "1.5430000000000001",
+      "type": "Sports Car"
+    },
+    {
+      "2005": "0.9009999999999999",
+      "2006": "0.885",
+      "2007": "0.8690000000000001",
+      "2008": "0.898",
+      "2009": "0.927",
+      "2010": "0.956",
+      "2011": "0.972",
+      "2012": "0.9890000000000001",
+      "2013": "1.005",
+      "2014": "1.022",
+      "2015": "1.038",
+      "2016": "1.054",
+      "2017": "1.073",
+      "2018": "1.097",
+      "2019": "1.102",
+      "2020": "1.1159999999999999",
+      "2021": "1.131",
+      "type": "Compact SUV"
+    },
+    {
+      "2005": "0.93",
+      "2006": "0.948",
+      "2007": "0.966",
+      "2008": "0.9840000000000001",
+      "2009": "1.002",
+      "2010": "1.02",
+      "2011": "1.025",
+      "2012": "1.03",
+      "2013": "1.035",
+      "2014": "1.04",
+      "2015": "1.081",
+      "2016": "1.122",
+      "2017": "1.147",
+      "2018": "1.177",
+      "2019": "1.185",
+      "2020": "1.194",
+      "2021": "1.203",
+      "type": "SUV"
+    },
+    {
+      "2010": "0.9209999999999999",
+      "2011": "0.945",
+      "2012": "0.968",
+      "2013": "0.992",
+      "2014": "1.016",
+      "2015": "1.0390000000000001",
+      "2016": "1.063",
+      "2017": "1.088",
+      "2018": "1.113",
+      "2019": "1.138",
+      "2020": "1.162",
+      "2021": "1.188",
+      "type": "Minivan"
+    },
+    {
+      "2005": "0.966",
+      "2006": "0.978",
+      "2007": "0.9890000000000001",
+      "2008": "1.001",
+      "2009": "1.012",
+      "2010": "1.024",
+      "2011": "1.053",
+      "2012": "1.081",
+      "2013": "1.11",
+      "2014": "1.138",
+      "2015": "1.167",
+      "2016": "1.196",
+      "2017": "1.2209999999999999",
+      "2018": "1.229",
+      "2019": "1.2429999999999999",
+      "2020": "1.254",
+      "2021": "1.265",
+      "type": "Pickup Truck"
+    },
+    {
+      "2016": "1.695",
+      "2017": "2.1959999999999997",
+      "2018": "2.2640000000000002",
+      "2019": "2.145",
+      "2020": "2.546",
+      "2021": "2.36",
+      "type": "Luxury Electric"
+    },
+    {
+      "2010": "1.093",
+      "2011": "1.123",
+      "2012": "1.153",
+      "2013": "1.1840000000000002",
+      "2014": "1.238",
+      "2015": "1.2930000000000001",
+      "2016": "1.347",
+      "2017": "1.401",
+      "2018": "1.455",
+      "2019": "1.5090000000000001",
+      "2020": "1.5630000000000002",
+      "2021": "1.5419999999999998",
+      "type": "Luxury Compact"
+    },
+    {
+      "2005": "0.968",
+      "2006": "1.013",
+      "2007": "1.057",
+      "2008": "1.102",
+      "2009": "1.125",
+      "2010": "1.149",
+      "2011": "1.1640000000000001",
+      "2012": "1.178",
+      "2013": "1.193",
+      "2014": "1.208",
+      "2015": "1.2990000000000002",
+      "2016": "1.39",
+      "2017": "1.474",
+      "2018": "1.5819999999999999",
+      "2019": "1.591",
+      "2020": "1.609",
+      "2021": "1.6269999999999998",
+      "type": "Luxury Sedan"
+    },
+    {
+      "2009": "1.4780000000000002",
+      "2010": "1.63",
+      "2011": "1.768",
+      "2012": "1.906",
+      "2013": "2.045",
+      "2014": "2.1830000000000003",
+      "2015": "2.242",
+      "2016": "2.521",
+      "2017": "2.6830000000000003",
+      "2018": "2.7889999999999997",
+      "2019": "2.545",
+      "2020": "2.7110000000000003",
+      "2021": "2.887",
+      "type": "Luxury Sports Car"
+    },
+    {
+      "2010": "1.063",
+      "2011": "1.089",
+      "2012": "1.1159999999999999",
+      "2013": "1.1420000000000001",
+      "2014": "1.168",
+      "2015": "1.195",
+      "2016": "1.2209999999999999",
+      "2017": "1.249",
+      "2018": "1.278",
+      "2019": "1.306",
+      "2020": "1.334",
+      "2021": "1.3630000000000002",
+      "type": "Luxury Compact SUV"
+    },
+    {
+      "2005": "0.941",
+      "2006": "0.9740000000000001",
+      "2007": "1.0070000000000001",
+      "2008": "1.0390000000000001",
+      "2009": "1.072",
+      "2010": "1.057",
+      "2011": "1.093",
+      "2012": "1.128",
+      "2013": "1.1640000000000001",
+      "2014": "1.199",
+      "2015": "1.235",
+      "2016": "1.27",
+      "2017": "1.291",
+      "2018": "1.305",
+      "2019": "1.3259999999999998",
+      "2020": "1.334",
+      "2021": "1.406",
+      "type": "Luxury SUV"
+    }
+  ],
+  "companies": [
+    {
+      "company": {
+        "name": "AAA"
+      },
+      "40FStateMinLOClean": {
+        "minimum": "$464",
+        "maximum": "$672",
+        "average": "$563"
+      },
+      "40FStateMinLOSpeed": {
+        "minimum": "$613",
+        "maximum": "$890",
+        "average": "$747"
+      },
+      "40FStateMinLOAccident": {
+        "minimum": "$681",
+        "maximum": "$993",
+        "average": "$832"
+      },
+      "40FStateMinLODUI": {
+        "minimum": "$722",
+        "maximum": "$1,051",
+        "average": "$881"
+      },
+      "40F50/100/50LOClean": {
+        "minimum": "$519",
+        "maximum": "$749",
+        "average": "$627"
+      },
+      "40F50/100/50LOSpeed": {
+        "minimum": "$685",
+        "maximum": "$991",
+        "average": "$831"
+      },
+      "40F50/100/50LOAccident": {
+        "minimum": "$760",
+        "maximum": "$1,103",
+        "average": "$924"
+      },
+      "40F50/100/50LODUI": {
+        "minimum": "$808",
+        "maximum": "$1,169",
+        "average": "$980"
+      },
+      "40F50/100/50CCClean": {
+        "minimum": "$917",
+        "maximum": "$1,201",
+        "average": "$1,027"
+      },
+      "40F50/100/50CCSpeed": {
+        "minimum": "$1,188",
+        "maximum": "$1,557",
+        "average": "$1,332"
+      },
+      "40F50/100/50CCAccident": {
+        "minimum": "$1,308",
+        "maximum": "$1,717",
+        "average": "$1,468"
+      },
+      "40F50/100/50CCDUI": {
+        "minimum": "$1,373",
+        "maximum": "$1,804",
+        "average": "$1,542"
+      },
+      "40F100/300/100CCClean": {
+        "minimum": "$995",
+        "maximum": "$1,310",
+        "average": "$1,118"
+      },
+      "40F100/300/100CCSpeed": {
+        "minimum": "$1,288",
+        "maximum": "$1,700",
+        "average": "$1,450"
+      },
+      "40F100/300/100CCAccident": {
+        "minimum": "$1,416",
+        "maximum": "$1,874",
+        "average": "$1,598"
+      },
+      "40F100/300/100CCDUI": {
+        "minimum": "$1,490",
+        "maximum": "$1,973",
+        "average": "$1,682"
+      },
+      "40MStateMinLOClean": {
+        "minimum": "$464",
+        "maximum": "$672",
+        "average": "$563"
+      },
+      "40MStateMinLOSpeed": {
+        "minimum": "$612",
+        "maximum": "$672",
+        "average": "$563"
+      },
+      "40MStateMinLOAccident": {
+        "minimum": "$679",
+        "maximum": "$991",
+        "average": "$831"
+      },
+      "40MStateMinLODUI": {
+        "minimum": "$722",
+        "maximum": "$1,049",
+        "average": "$880"
+      },
+      "40M50/100/50LOClean": {
+        "minimum": "$518",
+        "maximum": "$747",
+        "average": "$626"
+      },
+      "40M50/100/50LOSpeed": {
+        "minimum": "$684",
+        "maximum": "$990",
+        "average": "$830"
+      },
+      "40M50/100/50LOAccident": {
+        "minimum": "$760",
+        "maximum": "$1,102",
+        "average": "$923"
+      },
+      "40M50/100/50LODUI": {
+        "minimum": "$807",
+        "maximum": "$1,168",
+        "average": "$979"
+      },
+      "40M50/100/50CCClean": {
+        "minimum": "$918",
+        "maximum": "$1,200",
+        "average": "$1,028"
+      },
+      "40M50/100/50CCSpeed": {
+        "minimum": "$1,188",
+        "maximum": "$1,557",
+        "average": "$1,333"
+      },
+      "40M50/100/50CCAccident": {
+        "minimum": "$1,307",
+        "maximum": "$1,717",
+        "average": "$1,468"
+      },
+      "40M50/100/50CCDUI": {
+        "minimum": "$1,373",
+        "maximum": "$1,804",
+        "average": "$1,543"
+      },
+      "40M100/300/100CCClean": {
+        "minimum": "$996",
+        "maximum": "$1,310",
+        "average": "$1,118"
+      },
+      "40M100/300/100CCSpeed": {
+        "minimum": "$1,289",
+        "maximum": "$1,701",
+        "average": "$1,451"
+      },
+      "40M100/300/100CCAccident": {
+        "minimum": "$1,417",
+        "maximum": "$1,874",
+        "average": "$1,599"
+      },
+      "40M100/300/100CCDUI": {
+        "minimum": "$1,491",
+        "maximum": "$1,973",
+        "average": "$1,682"
+      },
+      "70FStateMinLOClean": {
+        "minimum": "$498",
+        "maximum": "$731",
+        "average": "$615"
+      },
+      "70FStateMinLOSpeed": {
+        "minimum": "$661",
+        "maximum": "$974",
+        "average": "$818"
+      },
+      "70FStateMinLOAccident": {
+        "minimum": "$737",
+        "maximum": "$1,088",
+        "average": "$914"
+      },
+      "70FStateMinLODUI": {
+        "minimum": "$780",
+        "maximum": "$1,149",
+        "average": "$965"
+      },
+      "70F50/100/50LOClean": {
+        "minimum": "$553",
+        "maximum": "$809",
+        "average": "$680"
+      },
+      "70F50/100/50LOSpeed": {
+        "minimum": "$733",
+        "maximum": "$1,076",
+        "average": "$904"
+      },
+      "70F50/100/50LOAccident": {
+        "minimum": "$817",
+        "maximum": "$1,201",
+        "average": "$1,009"
+      },
+      "70F50/100/50LODUI": {
+        "minimum": "$865",
+        "maximum": "$1,270",
+        "average": "$1,067"
+      },
+      "70F50/100/50CCClean": {
+        "minimum": "$951",
+        "maximum": "$1,247",
+        "average": "$1,068"
+      },
+      "70F50/100/50CCSpeed": {
+        "minimum": "$1,241",
+        "maximum": "$1,632",
+        "average": "$1,396"
+      },
+      "70F50/100/50CCAccident": {
+        "minimum": "$1,373",
+        "maximum": "$1,807",
+        "average": "$1,546"
+      },
+      "70F50/100/50CCDUI": {
+        "minimum": "$1,441",
+        "maximum": "$1,898",
+        "average": "$1,623"
+      },
+      "70F100/300/100CCClean": {
+        "minimum": "$1,027",
+        "maximum": "$1,356",
+        "average": "$1,158"
+      },
+      "70F100/300/100CCSpeed": {
+        "minimum": "$1,340",
+        "maximum": "$1,774",
+        "average": "$1,514"
+      },
+      "70F100/300/100CCAccident": {
+        "minimum": "$1,481",
+        "maximum": "$1,964",
+        "average": "$1,676"
+      },
+      "70F100/300/100CCDUI": {
+        "minimum": "$1,557",
+        "maximum": "$2,066",
+        "average": "$1,762"
+      },
+      "70MStateMinLOClean": {
+        "minimum": "$511",
+        "maximum": "$752",
+        "average": "$633"
+      },
+      "70MStateMinLOSpeed": {
+        "minimum": "$679",
+        "maximum": "$1,002",
+        "average": "$843"
+      },
+      "70MStateMinLOAccident": {
+        "minimum": "$758",
+        "maximum": "$1,119",
+        "average": "$942"
+      },
+      "70MStateMinLODUI ": {
+        "minimum": "$801",
+        "maximum": "$1,183",
+        "average": "$994"
+      },
+      "70M50/100/50LOClean": {
+        "minimum": "$567",
+        "maximum": "$831",
+        "average": "$699"
+      },
+      "70M50/100/50LOSpeed": {
+        "minimum": "$752",
+        "maximum": "$1,106",
+        "average": "$930"
+      },
+      "70M50/100/50LOAccident": {
+        "minimum": "$840",
+        "maximum": "$1,235",
+        "average": "$1,039"
+      },
+      "70M50/100/50LODUI": {
+        "minimum": "$889",
+        "maximum": "$1,305",
+        "average": "$1,097"
+      },
+      "70M50/100/50CCClean": {
+        "minimum": "$974",
+        "maximum": "$1,277",
+        "average": "$1,094"
+      },
+      "70M50/100/50CCSpeed": {
+        "minimum": "$1,272",
+        "maximum": "$1,671",
+        "average": "$1,431"
+      },
+      "70M50/100/50CCAccident": {
+        "minimum": "$1,407",
+        "maximum": "$1,850",
+        "average": "$1,584"
+      },
+      "70M50/100/50CCDUI": {
+        "minimum": "$1,476",
+        "maximum": "$1,943",
+        "average": "$1,663"
+      },
+      "70M100/300/100CCClean": {
+        "minimum": "$1,051",
+        "maximum": "$1,388",
+        "average": "$1,186"
+      },
+      "70M100/300/100CCSpeed": {
+        "minimum": "$1,373",
+        "maximum": "$1,816",
+        "average": "$1,550"
+      },
+      "70M100/300/100CCAccident": {
+        "minimum": "$1,518",
+        "maximum": "$2,009",
+        "average": "$1,716"
+      },
+      "70M100/300/100CCDUI": {
+        "minimum": "$1,595",
+        "maximum": "$2,113",
+        "average": "$1,804"
+      }
+    },
+    {
+      "company": {
+        "name": "Allstate"
+      },
+      "40FStateMinLOClean": {
+        "minimum": "$473",
+        "maximum": "$801",
+        "average": "$589"
+      },
+      "40FStateMinLOSpeed": {
+        "minimum": "$473",
+        "maximum": "$801",
+        "average": "$589"
+      },
+      "40FStateMinLOAccident": {
+        "minimum": "$729",
+        "maximum": "$1,235",
+        "average": "$930"
+      },
+      "40FStateMinLODUI": {
+        "minimum": "$780",
+        "maximum": "$1,295",
+        "average": "$988"
+      },
+      "40F50/100/50LOClean": {
+        "minimum": "$510",
+        "maximum": "$868",
+        "average": "$629"
+      },
+      "40F50/100/50LOSpeed": {
+        "minimum": "$510",
+        "maximum": "$868",
+        "average": "$629"
+      },
+      "40F50/100/50LOAccident": {
+        "minimum": "$772",
+        "maximum": "$1,316",
+        "average": "$981"
+      },
+      "40F50/100/50LODUI": {
+        "minimum": "$823",
+        "maximum": "$1,374",
+        "average": "$1,037"
+      },
+      "40F50/100/50CCClean": {
+        "minimum": "$934",
+        "maximum": "$1,414",
+        "average": "$1,061"
+      },
+      "40F50/100/50CCSpeed": {
+        "minimum": "$934",
+        "maximum": "$1,414",
+        "average": "$1,061"
+      },
+      "40F50/100/50CCAccident": {
+        "minimum": "$1,408",
+        "maximum": "$2,137",
+        "average": "$1,630"
+      },
+      "40F50/100/50CCDUI": {
+        "minimum": "$1,482",
+        "maximum": "$2,235",
+        "average": "$1,718"
+      },
+      "40F100/300/100CCClean": {
+        "minimum": "$1,045",
+        "maximum": "$1,602",
+        "average": "$1,173"
+      },
+      "40F100/300/100CCSpeed": {
+        "minimum": "$1,045",
+        "maximum": "$1,602",
+        "average": "$1,173"
+      },
+      "40F100/300/100CCAccident": {
+        "minimum": "$1,528",
+        "maximum": "$2,364",
+        "average": "$1,771"
+      },
+      "40F100/300/100CCDUI": {
+        "minimum": "$1,600",
+        "maximum": "$2,456",
+        "average": "$1,855"
+      },
+      "40MStateMinLOClean": {
+        "minimum": "$461",
+        "maximum": "$783",
+        "average": "$573"
+      },
+      "40MStateMinLOSpeed": {
+        "minimum": "$461",
+        "maximum": "$783",
+        "average": "$573"
+      },
+      "40MStateMinLOAccident": {
+        "minimum": "$708",
+        "maximum": "$1,204",
+        "average": "$904"
+      },
+      "40MStateMinLODUI": {
+        "minimum": "$756",
+        "maximum": "$1,260",
+        "average": "$958"
+      },
+      "40M50/100/50LOClean": {
+        "minimum": "$497",
+        "maximum": "$850",
+        "average": "$613"
+      },
+      "40M50/100/50LOSpeed": {
+        "minimum": "$497",
+        "maximum": "$850",
+        "average": "$613"
+      },
+      "40M50/100/50LOAccident": {
+        "minimum": "$751",
+        "maximum": "$1,284",
+        "average": "$954"
+      },
+      "40M50/100/50LODUI": {
+        "minimum": "$799",
+        "maximum": "$1,338",
+        "average": "$1,007"
+      },
+      "40M50/100/50CCClean": {
+        "minimum": "$932",
+        "maximum": "$1,409",
+        "average": "$1,056"
+      },
+      "40M50/100/50CCSpeed": {
+        "minimum": "$932",
+        "maximum": "$1,409",
+        "average": "$1,056"
+      },
+      "40M50/100/50CCAccident": {
+        "minimum": "$1,403",
+        "maximum": "$2,121",
+        "average": "$1,616"
+      },
+      "40M50/100/50CCDUI": {
+        "minimum": "$1,473",
+        "maximum": "$2,214",
+        "average": "$1,700"
+      },
+      "40M100/300/100CCClean": {
+        "minimum": "$1,038",
+        "maximum": "$1,596",
+        "average": "$1,168"
+      },
+      "40M100/300/100CCSpeed": {
+        "minimum": "$1,038",
+        "maximum": "$1,596",
+        "average": "$1,168"
+      },
+      "40M100/300/100CCAccident": {
+        "minimum": "$1,523",
+        "maximum": "$2,347",
+        "average": "$1,756"
+      },
+      "40M100/300/100CCDUI": {
+        "minimum": "$1,590",
+        "maximum": "$2,434",
+        "average": "$1,836"
+      },
+      "70FStateMinLOClean": {
+        "minimum": "$502",
+        "maximum": "$856",
+        "average": "$629"
+      },
+      "70FStateMinLOSpeed": {
+        "minimum": "$502",
+        "maximum": "$856",
+        "average": "$629"
+      },
+      "70FStateMinLOAccident": {
+        "minimum": "$779",
+        "maximum": "$1,331",
+        "average": "$1,001"
+      },
+      "70FStateMinLODUI": {
+        "minimum": "$830",
+        "maximum": "$1,389",
+        "average": "$1,059"
+      },
+      "70F50/100/50LOClean": {
+        "minimum": "$539",
+        "maximum": "$926",
+        "average": "$671"
+      },
+      "70F50/100/50LOSpeed": {
+        "minimum": "$539",
+        "maximum": "$926",
+        "average": "$671"
+      },
+      "70F50/100/50LOAccident": {
+        "minimum": "$824",
+        "maximum": "$1,416",
+        "average": "$1,055"
+      },
+      "70F50/100/50LODUI": {
+        "minimum": "$875",
+        "maximum": "$1,472",
+        "average": "$1,111"
+      },
+      "70F50/100/50CCClean": {
+        "minimum": "$946",
+        "maximum": "$1,440",
+        "average": "$1,078"
+      },
+      "70F50/100/50CCSpeed": {
+        "minimum": "$946",
+        "maximum": "$1,440",
+        "average": "$1,078"
+      },
+      "70F50/100/50CCAccident": {
+        "minimum": "$1,423",
+        "maximum": "$2,195",
+        "average": "$1,670"
+      },
+      "70F50/100/50CCDUI": {
+        "minimum": "$1,498",
+        "maximum": "$2,292",
+        "average": "$1,758"
+      },
+      "70F100/300/100CCClean": {
+        "minimum": "$1,051",
+        "maximum": "$1,635",
+        "average": "$1,196"
+      },
+      "70F100/300/100CCSpeed": {
+        "minimum": "$1,051",
+        "maximum": "$1,635",
+        "average": "$1,196"
+      },
+      "70F100/300/100CCAccident": {
+        "minimum": "$1,550",
+        "maximum": "$2,435",
+        "average": "$1,821"
+      },
+      "70F100/300/100CCDUI": {
+        "minimum": "$1,622",
+        "maximum": "$2,525",
+        "average": "$1,904"
+      },
+      "70MStateMinLOClean": {
+        "minimum": "$502",
+        "maximum": "$856",
+        "average": "$629"
+      },
+      "70MStateMinLOSpeed": {
+        "minimum": "$502",
+        "maximum": "$856",
+        "average": "$629"
+      },
+      "70MStateMinLOAccident": {
+        "minimum": "$779",
+        "maximum": "$1,331",
+        "average": "$1,001"
+      },
+      "70MStateMinLODUI ": {
+        "minimum": "$830",
+        "maximum": "$1,389",
+        "average": "$1,059"
+      },
+      "70M50/100/50LOClean": {
+        "minimum": "$539",
+        "maximum": "$926",
+        "average": "$671"
+      },
+      "70M50/100/50LOSpeed": {
+        "minimum": "$539",
+        "maximum": "$926",
+        "average": "$671"
+      },
+      "70M50/100/50LOAccident": {
+        "minimum": "$824",
+        "maximum": "$1,416",
+        "average": "$1,055"
+      },
+      "70M50/100/50LODUI": {
+        "minimum": "$875",
+        "maximum": "$1,472",
+        "average": "$1,111"
+      },
+      "70M50/100/50CCClean": {
+        "minimum": "$946",
+        "maximum": "$1,440",
+        "average": "$1,078"
+      },
+      "70M50/100/50CCSpeed": {
+        "minimum": "$946",
+        "maximum": "$1,440",
+        "average": "$1,078"
+      },
+      "70M50/100/50CCAccident": {
+        "minimum": "$1,423",
+        "maximum": "$2,195",
+        "average": "$1,670"
+      },
+      "70M50/100/50CCDUI": {
+        "minimum": "$1,498",
+        "maximum": "$2,292",
+        "average": "$1,758"
+      },
+      "70M100/300/100CCClean": {
+        "minimum": "$1,051",
+        "maximum": "$1,635",
+        "average": "$1,196"
+      },
+      "70M100/300/100CCSpeed": {
+        "minimum": "$1,051",
+        "maximum": "$1,635",
+        "average": "$1,196"
+      },
+      "70M100/300/100CCAccident": {
+        "minimum": "$1,550",
+        "maximum": "$2,435",
+        "average": "$1,821"
+      },
+      "70M100/300/100CCDUI": {
+        "minimum": "$1,622",
+        "maximum": "$2,525",
+        "average": "$1,904"
+      }
+    },
+    {
+      "company": {
+        "name": "Esurance"
+      },
+      "40FStateMinLOClean": {
+        "minimum": "$570",
+        "maximum": "$908",
+        "average": "$709"
+      },
+      "40FStateMinLOSpeed": {
+        "minimum": "$570",
+        "maximum": "$908",
+        "average": "$709"
+      },
+      "40FStateMinLOAccident": {
+        "minimum": "$1,114",
+        "maximum": "$1,932",
+        "average": "$1,445"
+      },
+      "40FStateMinLODUI": {
+        "minimum": "$570",
+        "maximum": "$908",
+        "average": "$709"
+      },
+      "40F50/100/50LOClean": {
+        "minimum": "$640",
+        "maximum": "$1,032",
+        "average": "$799"
+      },
+      "40F50/100/50LOSpeed": {
+        "minimum": "$640",
+        "maximum": "$1,032",
+        "average": "$799"
+      },
+      "40F50/100/50LOAccident": {
+        "minimum": "$1,270",
+        "maximum": "$2,216",
+        "average": "$1,652"
+      },
+      "40F50/100/50LODUI": {
+        "minimum": "$640",
+        "maximum": "$1,032",
+        "average": "$799"
+      },
+      "40F50/100/50CCClean": {
+        "minimum": "$864",
+        "maximum": "$1,386",
+        "average": "$1,070"
+      },
+      "40F50/100/50CCSpeed": {
+        "minimum": "$864",
+        "maximum": "$1,386",
+        "average": "$1,070"
+      },
+      "40F50/100/50CCAccident": {
+        "minimum": "$1,796",
+        "maximum": "$3,046",
+        "average": "$2,289"
+      },
+      "40F50/100/50CCDUI": {
+        "minimum": "$864",
+        "maximum": "$1,386",
+        "average": "$1,070"
+      },
+      "40F100/300/100CCClean": {
+        "minimum": "$998",
+        "maximum": "$1,628",
+        "average": "$1,245"
+      },
+      "40F100/300/100CCSpeed": {
+        "minimum": "$998",
+        "maximum": "$1,628",
+        "average": "$1,245"
+      },
+      "40F100/300/100CCAccident": {
+        "minimum": "$2,104",
+        "maximum": "$3,598",
+        "average": "$2,688"
+      },
+      "40F100/300/100CCDUI": {
+        "minimum": "$998",
+        "maximum": "$1,628",
+        "average": "$1,245"
+      },
+      "40MStateMinLOClean": {
+        "minimum": "$530",
+        "maximum": "$840",
+        "average": "$656"
+      },
+      "40MStateMinLOSpeed": {
+        "minimum": "$530",
+        "maximum": "$840",
+        "average": "$656"
+      },
+      "40MStateMinLOAccident": {
+        "minimum": "$1,058",
+        "maximum": "$1,836",
+        "average": "$1,371"
+      },
+      "40MStateMinLODUI": {
+        "minimum": "$530",
+        "maximum": "$840",
+        "average": "$656"
+      },
+      "40M50/100/50LOClean": {
+        "minimum": "$588",
+        "maximum": "$944",
+        "average": "$732"
+      },
+      "40M50/100/50LOSpeed": {
+        "minimum": "$588",
+        "maximum": "$944",
+        "average": "$732"
+      },
+      "40M50/100/50LOAccident": {
+        "minimum": "$1,196",
+        "maximum": "$2,092",
+        "average": "$1,556"
+      },
+      "40M50/100/50LODUI": {
+        "minimum": "$588",
+        "maximum": "$944",
+        "average": "$732"
+      },
+      "40M50/100/50CCClean": {
+        "minimum": "$814",
+        "maximum": "$1,300",
+        "average": "$1,004"
+      },
+      "40M50/100/50CCSpeed": {
+        "minimum": "$814",
+        "maximum": "$1,300",
+        "average": "$1,004"
+      },
+      "40M50/100/50CCAccident": {
+        "minimum": "$1,724",
+        "maximum": "$2,926",
+        "average": "$2,196"
+      },
+      "40M50/100/50CCDUI": {
+        "minimum": "$814",
+        "maximum": "$1,300",
+        "average": "$1,004"
+      },
+      "40M100/300/100CCClean": {
+        "minimum": "$926",
+        "maximum": "$1,504",
+        "average": "$1,149"
+      },
+      "40M100/300/100CCSpeed": {
+        "minimum": "$926",
+        "maximum": "$1,504",
+        "average": "$1,149"
+      },
+      "40M100/300/100CCAccident": {
+        "minimum": "$2,000",
+        "maximum": "$3,426",
+        "average": "$2,552"
+      },
+      "40M100/300/100CCDUI": {
+        "minimum": "$926",
+        "maximum": "$1,504",
+        "average": "$1,149"
+      },
+      "70FStateMinLOClean": {
+        "minimum": "$580",
+        "maximum": "$940",
+        "average": "$725"
+      },
+      "70FStateMinLOSpeed": {
+        "minimum": "$580",
+        "maximum": "$940",
+        "average": "$725"
+      },
+      "70FStateMinLOAccident": {
+        "minimum": "$1,336",
+        "maximum": "$2,394",
+        "average": "$1,758"
+      },
+      "70FStateMinLODUI": {
+        "minimum": "$580",
+        "maximum": "$940",
+        "average": "$725"
+      },
+      "70F50/100/50LOClean": {
+        "minimum": "$644",
+        "maximum": "$1,056",
+        "average": "$808"
+      },
+      "70F50/100/50LOSpeed": {
+        "minimum": "$644",
+        "maximum": "$1,056",
+        "average": "$808"
+      },
+      "70F50/100/50LOAccident": {
+        "minimum": "$1,508",
+        "maximum": "$2,716",
+        "average": "$1,987"
+      },
+      "70F50/100/50LODUI": {
+        "minimum": "$644",
+        "maximum": "$1,056",
+        "average": "$808"
+      },
+      "70F50/100/50CCClean": {
+        "minimum": "$860",
+        "maximum": "$1,402",
+        "average": "$1,073"
+      },
+      "70F50/100/50CCSpeed": {
+        "minimum": "$860",
+        "maximum": "$1,402",
+        "average": "$1,073"
+      },
+      "70F50/100/50CCAccident": {
+        "minimum": "$2,066",
+        "maximum": "$3,608",
+        "average": "$2,674"
+      },
+      "70F50/100/50CCDUI": {
+        "minimum": "$860",
+        "maximum": "$1,402",
+        "average": "$1,073"
+      },
+      "70F100/300/100CCClean": {
+        "minimum": "$982",
+        "maximum": "$1,626",
+        "average": "$1,233"
+      },
+      "70F100/300/100CCSpeed": {
+        "minimum": "$982",
+        "maximum": "$1,626",
+        "average": "$1,233"
+      },
+      "70F100/300/100CCAccident": {
+        "minimum": "$2,404",
+        "maximum": "$4,230",
+        "average": "$3,115"
+      },
+      "70F100/300/100CCDUI": {
+        "minimum": "$982",
+        "maximum": "$1,626",
+        "average": "$1,233"
+      },
+      "70MStateMinLOClean": {
+        "minimum": "$652",
+        "maximum": "$1,082",
+        "average": "$824"
+      },
+      "70MStateMinLOSpeed": {
+        "minimum": "$652",
+        "maximum": "$1,082",
+        "average": "$824"
+      },
+      "70MStateMinLOAccident": {
+        "minimum": "$1,460",
+        "maximum": "$2,642",
+        "average": "$1,931"
+      },
+      "70MStateMinLODUI ": {
+        "minimum": "$652",
+        "maximum": "$1,082",
+        "average": "$824"
+      },
+      "70M50/100/50LOClean": {
+        "minimum": "$724",
+        "maximum": "$1,216",
+        "average": "$919"
+      },
+      "70M50/100/50LOSpeed": {
+        "minimum": "$724",
+        "maximum": "$1,216",
+        "average": "$919"
+      },
+      "70M50/100/50LOAccident": {
+        "minimum": "$1,646",
+        "maximum": "$2,990",
+        "average": "$2,180"
+      },
+      "70M50/100/50LODUI": {
+        "minimum": "$724",
+        "maximum": "$1,216",
+        "average": "$919"
+      },
+      "70M50/100/50CCClean": {
+        "minimum": "$1,000",
+        "maximum": "$1,658",
+        "average": "$1,259"
+      },
+      "70M50/100/50CCSpeed": {
+        "minimum": "$1,000",
+        "maximum": "$1,658",
+        "average": "$1,259"
+      },
+      "70M50/100/50CCAccident": {
+        "minimum": "$2,296",
+        "maximum": "$4,030",
+        "average": "$2,980"
+      },
+      "70M50/100/50CCDUI": {
+        "minimum": "$1,000",
+        "maximum": "$1,658",
+        "average": "$1,259"
+      },
+      "70M100/300/100CCClean": {
+        "minimum": "$1,140",
+        "maximum": "$1,914",
+        "average": "$1,441"
+      },
+      "70M100/300/100CCSpeed": {
+        "minimum": "$1,140",
+        "maximum": "$1,914",
+        "average": "$1,441"
+      },
+      "70M100/300/100CCAccident": {
+        "minimum": "$2,664",
+        "maximum": "$4,712",
+        "average": "$3,457"
+      },
+      "70M100/300/100CCDUI": {
+        "minimum": "$1,140",
+        "maximum": "$1,914",
+        "average": "$1,441"
+      }
+    },
+    {
+      "company": {
+        "name": "Farmers"
+      },
+      "40FStateMinLOClean": {
+        "minimum": "$361",
+        "maximum": "$506",
+        "average": "$450"
+      },
+      "40FStateMinLOSpeed": {
+        "minimum": "$463",
+        "maximum": "$654",
+        "average": "$578"
+      },
+      "40FStateMinLOAccident": {
+        "minimum": "$490",
+        "maximum": "$690",
+        "average": "$613"
+      },
+      "40FStateMinLODUI": {
+        "minimum": "$520",
+        "maximum": "$735",
+        "average": "$650"
+      },
+      "40F50/100/50LOClean": {
+        "minimum": "$385",
+        "maximum": "$541",
+        "average": "$480"
+      },
+      "40F50/100/50LOSpeed": {
+        "minimum": "$491",
+        "maximum": "$701",
+        "average": "$617"
+      },
+      "40F50/100/50LOAccident": {
+        "minimum": "$521",
+        "maximum": "$740",
+        "average": "$655"
+      },
+      "40F50/100/50LODUI": {
+        "minimum": "$553",
+        "maximum": "$788",
+        "average": "$694"
+      },
+      "40F50/100/50CCClean": {
+        "minimum": "$708",
+        "maximum": "$953",
+        "average": "$826"
+      },
+      "40F50/100/50CCSpeed": {
+        "minimum": "$908",
+        "maximum": "$1,233",
+        "average": "$1,065"
+      },
+      "40F50/100/50CCAccident": {
+        "minimum": "$982",
+        "maximum": "$1,323",
+        "average": "$1,145"
+      },
+      "40F50/100/50CCDUI": {
+        "minimum": "$1,010",
+        "maximum": "$1,369",
+        "average": "$1,183"
+      },
+      "40F100/300/100CCClean": {
+        "minimum": "$747",
+        "maximum": "$1,014",
+        "average": "$879"
+      },
+      "40F100/300/100CCSpeed": {
+        "minimum": "$958",
+        "maximum": "$1,315",
+        "average": "$1,135"
+      },
+      "40F100/300/100CCAccident": {
+        "minimum": "$1,035",
+        "maximum": "$1,412",
+        "average": "$1,220"
+      },
+      "40F100/300/100CCDUI": {
+        "minimum": "$1,067",
+        "maximum": "$1,463",
+        "average": "$1,262"
+      },
+      "40MStateMinLOClean": {
+        "minimum": "$339",
+        "maximum": "$473",
+        "average": "$420"
+      },
+      "40MStateMinLOSpeed": {
+        "minimum": "$440",
+        "maximum": "$473",
+        "average": "$420"
+      },
+      "40MStateMinLOAccident": {
+        "minimum": "$468",
+        "maximum": "$657",
+        "average": "$584"
+      },
+      "40MStateMinLODUI": {
+        "minimum": "$498",
+        "maximum": "$703",
+        "average": "$621"
+      },
+      "40M50/100/50LOClean": {
+        "minimum": "$358",
+        "maximum": "$504",
+        "average": "$447"
+      },
+      "40M50/100/50LOSpeed": {
+        "minimum": "$466",
+        "maximum": "$662",
+        "average": "$584"
+      },
+      "40M50/100/50LOAccident": {
+        "minimum": "$497",
+        "maximum": "$703",
+        "average": "$622"
+      },
+      "40M50/100/50LODUI": {
+        "minimum": "$528",
+        "maximum": "$751",
+        "average": "$662"
+      },
+      "40M50/100/50CCClean": {
+        "minimum": "$664",
+        "maximum": "$893",
+        "average": "$774"
+      },
+      "40M50/100/50CCSpeed": {
+        "minimum": "$865",
+        "maximum": "$1,175",
+        "average": "$1,015"
+      },
+      "40M50/100/50CCAccident": {
+        "minimum": "$943",
+        "maximum": "$1,266",
+        "average": "$1,096"
+      },
+      "40M50/100/50CCDUI": {
+        "minimum": "$971",
+        "maximum": "$1,311",
+        "average": "$1,134"
+      },
+      "40M100/300/100CCClean": {
+        "minimum": "$698",
+        "maximum": "$949",
+        "average": "$821"
+      },
+      "40M100/300/100CCSpeed": {
+        "minimum": "$912",
+        "maximum": "$1,251",
+        "average": "$1,079"
+      },
+      "40M100/300/100CCAccident": {
+        "minimum": "$992",
+        "maximum": "$1,348",
+        "average": "$1,165"
+      },
+      "40M100/300/100CCDUI": {
+        "minimum": "$1,024",
+        "maximum": "$1,398",
+        "average": "$1,207"
+      },
+      "70FStateMinLOClean": {
+        "minimum": "$354",
+        "maximum": "$496",
+        "average": "$441"
+      },
+      "70FStateMinLOSpeed": {
+        "minimum": "$448",
+        "maximum": "$632",
+        "average": "$561"
+      },
+      "70FStateMinLOAccident": {
+        "minimum": "$605",
+        "maximum": "$859",
+        "average": "$758"
+      },
+      "70FStateMinLODUI": {
+        "minimum": "$650",
+        "maximum": "$930",
+        "average": "$817"
+      },
+      "70F50/100/50LOClean": {
+        "minimum": "$376",
+        "maximum": "$532",
+        "average": "$471"
+      },
+      "70F50/100/50LOSpeed": {
+        "minimum": "$477",
+        "maximum": "$677",
+        "average": "$599"
+      },
+      "70F50/100/50LOAccident": {
+        "minimum": "$642",
+        "maximum": "$918",
+        "average": "$808"
+      },
+      "70F50/100/50LODUI": {
+        "minimum": "$689",
+        "maximum": "$994",
+        "average": "$871"
+      },
+      "70F50/100/50CCClean": {
+        "minimum": "$645",
+        "maximum": "$875",
+        "average": "$760"
+      },
+      "70F50/100/50CCSpeed": {
+        "minimum": "$866",
+        "maximum": "$1,170",
+        "average": "$1,015"
+      },
+      "70F50/100/50CCAccident": {
+        "minimum": "$1,075",
+        "maximum": "$1,474",
+        "average": "$1,277"
+      },
+      "70F50/100/50CCDUI": {
+        "minimum": "$1,121",
+        "maximum": "$1,544",
+        "average": "$1,335"
+      },
+      "70F100/300/100CCClean": {
+        "minimum": "$685",
+        "maximum": "$937",
+        "average": "$813"
+      },
+      "70F100/300/100CCSpeed": {
+        "minimum": "$914",
+        "maximum": "$1,250",
+        "average": "$1,082"
+      },
+      "70F100/300/100CCAccident": {
+        "minimum": "$1,142",
+        "maximum": "$1,579",
+        "average": "$1,366"
+      },
+      "70F100/300/100CCDUI": {
+        "minimum": "$1,193",
+        "maximum": "$1,657",
+        "average": "$1,430"
+      },
+      "70MStateMinLOClean": {
+        "minimum": "$375",
+        "maximum": "$520",
+        "average": "$464"
+      },
+      "70MStateMinLOSpeed": {
+        "minimum": "$468",
+        "maximum": "$655",
+        "average": "$583"
+      },
+      "70MStateMinLOAccident": {
+        "minimum": "$630",
+        "maximum": "$888",
+        "average": "$785"
+      },
+      "70MStateMinLODUI ": {
+        "minimum": "$676",
+        "maximum": "$961",
+        "average": "$845"
+      },
+      "70M50/100/50LOClean": {
+        "minimum": "$396",
+        "maximum": "$554",
+        "average": "$492"
+      },
+      "70M50/100/50LOSpeed": {
+        "minimum": "$495",
+        "maximum": "$696",
+        "average": "$618"
+      },
+      "70M50/100/50LOAccident": {
+        "minimum": "$666",
+        "maximum": "$945",
+        "average": "$833"
+      },
+      "70M50/100/50LODUI": {
+        "minimum": "$715",
+        "maximum": "$1,023",
+        "average": "$897"
+      },
+      "70M50/100/50CCClean": {
+        "minimum": "$676",
+        "maximum": "$903",
+        "average": "$786"
+      },
+      "70M50/100/50CCSpeed": {
+        "minimum": "$893",
+        "maximum": "$1,195",
+        "average": "$1,038"
+      },
+      "70M50/100/50CCAccident": {
+        "minimum": "$1,108",
+        "maximum": "$1,508",
+        "average": "$1,307"
+      },
+      "70M50/100/50CCDUI": {
+        "minimum": "$1,156",
+        "maximum": "$1,579",
+        "average": "$1,366"
+      },
+      "70M100/300/100CCClean": {
+        "minimum": "$712",
+        "maximum": "$959",
+        "average": "$834"
+      },
+      "70M100/300/100CCSpeed": {
+        "minimum": "$940",
+        "maximum": "$1,269",
+        "average": "$1,102"
+      },
+      "70M100/300/100CCAccident": {
+        "minimum": "$1,171",
+        "maximum": "$1,606",
+        "average": "$1,392"
+      },
+      "70M100/300/100CCDUI": {
+        "minimum": "$1,224",
+        "maximum": "$1,685",
+        "average": "$1,457"
+      }
+    },
+    {
+      "company": {
+        "name": "GEICO"
+      },
+      "40FStateMinLOClean": {
+        "minimum": "$449",
+        "maximum": "$727",
+        "average": "$572"
+      },
+      "40FStateMinLOSpeed": {
+        "minimum": "$513",
+        "maximum": "$844",
+        "average": "$658"
+      },
+      "40FStateMinLOAccident": {
+        "minimum": "$602",
+        "maximum": "$1,027",
+        "average": "$790"
+      },
+      "40FStateMinLODUI": {
+        "minimum": "$751",
+        "maximum": "$1,325",
+        "average": "$1,003"
+      },
+      "40F50/100/50LOClean": {
+        "minimum": "$489",
+        "maximum": "$798",
+        "average": "$624"
+      },
+      "40F50/100/50LOSpeed": {
+        "minimum": "$560",
+        "maximum": "$929",
+        "average": "$721"
+      },
+      "40F50/100/50LOAccident": {
+        "minimum": "$659",
+        "maximum": "$1,131",
+        "average": "$867"
+      },
+      "40F50/100/50LODUI": {
+        "minimum": "$825",
+        "maximum": "$1,463",
+        "average": "$1,104"
+      },
+      "40F50/100/50CCClean": {
+        "minimum": "$751",
+        "maximum": "$1,126",
+        "average": "$905"
+      },
+      "40F50/100/50CCSpeed": {
+        "minimum": "$876",
+        "maximum": "$1,324",
+        "average": "$1,059"
+      },
+      "40F50/100/50CCAccident": {
+        "minimum": "$1,024",
+        "maximum": "$1,611",
+        "average": "$1,269"
+      },
+      "40F50/100/50CCDUI": {
+        "minimum": "$1,228",
+        "maximum": "$2,012",
+        "average": "$1,557"
+      },
+      "40F100/300/100CCClean": {
+        "minimum": "$832",
+        "maximum": "$1,266",
+        "average": "$1,005"
+      },
+      "40F100/300/100CCSpeed": {
+        "minimum": "$973",
+        "maximum": "$1,492",
+        "average": "$1,179"
+      },
+      "40F100/300/100CCAccident": {
+        "minimum": "$1,140",
+        "maximum": "$1,814",
+        "average": "$1,413"
+      },
+      "40F100/300/100CCDUI": {
+        "minimum": "$1,379",
+        "maximum": "$2,282",
+        "average": "$1,745"
+      },
+      "40MStateMinLOClean": {
+        "minimum": "$416",
+        "maximum": "$672",
+        "average": "$528"
+      },
+      "40MStateMinLOSpeed": {
+        "minimum": "$473",
+        "maximum": "$672",
+        "average": "$528"
+      },
+      "40MStateMinLOAccident": {
+        "minimum": "$556",
+        "maximum": "$947",
+        "average": "$728"
+      },
+      "40MStateMinLODUI": {
+        "minimum": "$694",
+        "maximum": "$1,224",
+        "average": "$925"
+      },
+      "40M50/100/50LOClean": {
+        "minimum": "$451",
+        "maximum": "$736",
+        "average": "$575"
+      },
+      "40M50/100/50LOSpeed": {
+        "minimum": "$515",
+        "maximum": "$854",
+        "average": "$662"
+      },
+      "40M50/100/50LOAccident": {
+        "minimum": "$607",
+        "maximum": "$1,042",
+        "average": "$797"
+      },
+      "40M50/100/50LODUI": {
+        "minimum": "$761",
+        "maximum": "$1,350",
+        "average": "$1,017"
+      },
+      "40M50/100/50CCClean": {
+        "minimum": "$721",
+        "maximum": "$1,069",
+        "average": "$862"
+      },
+      "40M50/100/50CCSpeed": {
+        "minimum": "$840",
+        "maximum": "$1,256",
+        "average": "$1,008"
+      },
+      "40M50/100/50CCAccident": {
+        "minimum": "$981",
+        "maximum": "$1,528",
+        "average": "$1,207"
+      },
+      "40M50/100/50CCDUI": {
+        "minimum": "$1,174",
+        "maximum": "$1,905",
+        "average": "$1,477"
+      },
+      "40M100/300/100CCClean": {
+        "minimum": "$794",
+        "maximum": "$1,196",
+        "average": "$952"
+      },
+      "40M100/300/100CCSpeed": {
+        "minimum": "$927",
+        "maximum": "$1,408",
+        "average": "$1,116"
+      },
+      "40M100/300/100CCAccident": {
+        "minimum": "$1,086",
+        "maximum": "$1,714",
+        "average": "$1,337"
+      },
+      "40M100/300/100CCDUI": {
+        "minimum": "$1,311",
+        "maximum": "$2,154",
+        "average": "$1,649"
+      },
+      "70FStateMinLOClean": {
+        "minimum": "$481",
+        "maximum": "$792",
+        "average": "$617"
+      },
+      "70FStateMinLOSpeed": {
+        "minimum": "$550",
+        "maximum": "$921",
+        "average": "$713"
+      },
+      "70FStateMinLOAccident": {
+        "minimum": "$664",
+        "maximum": "$1,152",
+        "average": "$878"
+      },
+      "70FStateMinLODUI": {
+        "minimum": "$843",
+        "maximum": "$1,513",
+        "average": "$1,137"
+      },
+      "70F50/100/50LOClean": {
+        "minimum": "$524",
+        "maximum": "$870",
+        "average": "$674"
+      },
+      "70F50/100/50LOSpeed": {
+        "minimum": "$601",
+        "maximum": "$1,014",
+        "average": "$781"
+      },
+      "70F50/100/50LOAccident": {
+        "minimum": "$728",
+        "maximum": "$1,271",
+        "average": "$965"
+      },
+      "70F50/100/50LODUI": {
+        "minimum": "$927",
+        "maximum": "$1,672",
+        "average": "$1,252"
+      },
+      "70F50/100/50CCClean": {
+        "minimum": "$731",
+        "maximum": "$1,150",
+        "average": "$907"
+      },
+      "70F50/100/50CCSpeed": {
+        "minimum": "$873",
+        "maximum": "$1,388",
+        "average": "$1,088"
+      },
+      "70F50/100/50CCAccident": {
+        "minimum": "$1,041",
+        "maximum": "$1,715",
+        "average": "$1,325"
+      },
+      "70F50/100/50CCDUI": {
+        "minimum": "$1,286",
+        "maximum": "$2,198",
+        "average": "$1,673"
+      },
+      "70F100/300/100CCClean": {
+        "minimum": "$820",
+        "maximum": "$1,304",
+        "average": "$1,016"
+      },
+      "70F100/300/100CCSpeed": {
+        "minimum": "$978",
+        "maximum": "$1,572",
+        "average": "$1,219"
+      },
+      "70F100/300/100CCAccident": {
+        "minimum": "$1,172",
+        "maximum": "$1,949",
+        "average": "$1,488"
+      },
+      "70F100/300/100CCDUI": {
+        "minimum": "$1,457",
+        "maximum": "$2,509",
+        "average": "$1,888"
+      },
+      "70MStateMinLOClean": {
+        "minimum": "$476",
+        "maximum": "$794",
+        "average": "$616"
+      },
+      "70MStateMinLOSpeed": {
+        "minimum": "$544",
+        "maximum": "$924",
+        "average": "$711"
+      },
+      "70MStateMinLOAccident": {
+        "minimum": "$662",
+        "maximum": "$1,161",
+        "average": "$881"
+      },
+      "70MStateMinLODUI ": {
+        "minimum": "$846",
+        "maximum": "$1,534",
+        "average": "$1,148"
+      },
+      "70M50/100/50LOClean": {
+        "minimum": "$518",
+        "maximum": "$871",
+        "average": "$672"
+      },
+      "70M50/100/50LOSpeed": {
+        "minimum": "$594",
+        "maximum": "$1,016",
+        "average": "$778"
+      },
+      "70M50/100/50LOAccident": {
+        "minimum": "$725",
+        "maximum": "$1,280",
+        "average": "$967"
+      },
+      "70M50/100/50LODUI": {
+        "minimum": "$930",
+        "maximum": "$1,694",
+        "average": "$1,263"
+      },
+      "70M50/100/50CCClean": {
+        "minimum": "$733",
+        "maximum": "$1,158",
+        "average": "$911"
+      },
+      "70M50/100/50CCSpeed": {
+        "minimum": "$874",
+        "maximum": "$1,398",
+        "average": "$1,094"
+      },
+      "70M50/100/50CCAccident": {
+        "minimum": "$1,047",
+        "maximum": "$1,735",
+        "average": "$1,337"
+      },
+      "70M50/100/50CCDUI": {
+        "minimum": "$1,299",
+        "maximum": "$2,231",
+        "average": "$1,695"
+      },
+      "70M100/300/100CCClean": {
+        "minimum": "$818",
+        "maximum": "$1,310",
+        "average": "$1,017"
+      },
+      "70M100/300/100CCSpeed": {
+        "minimum": "$976",
+        "maximum": "$1,580",
+        "average": "$1,220"
+      },
+      "70M100/300/100CCAccident": {
+        "minimum": "$1,175",
+        "maximum": "$1,967",
+        "average": "$1,497"
+      },
+      "70M100/300/100CCDUI": {
+        "minimum": "$1,468",
+        "maximum": "$2,543",
+        "average": "$1,909"
+      }
+    },
+    {
+      "company": {
+        "name": "Mercury"
+      },
+      "40FStateMinLOClean": {
+        "minimum": "$608",
+        "maximum": "$1,089",
+        "average": "$790"
+      },
+      "40FStateMinLOSpeed": {
+        "minimum": "$750",
+        "maximum": "$1,363",
+        "average": "$983"
+      },
+      "40FStateMinLOAccident": {
+        "minimum": "$1,002",
+        "maximum": "$1,860",
+        "average": "$1,331"
+      },
+      "40FStateMinLODUI": {
+        "minimum": "$760",
+        "maximum": "$1,387",
+        "average": "$999"
+      },
+      "40F50/100/50LOClean": {
+        "minimum": "$683",
+        "maximum": "$1,228",
+        "average": "$887"
+      },
+      "40F50/100/50LOSpeed": {
+        "minimum": "$845",
+        "maximum": "$1,538",
+        "average": "$1,103"
+      },
+      "40F50/100/50LOAccident": {
+        "minimum": "$1,132",
+        "maximum": "$2,097",
+        "average": "$1,495"
+      },
+      "40F50/100/50LODUI": {
+        "minimum": "$856",
+        "maximum": "$1,564",
+        "average": "$1,121"
+      },
+      "40F50/100/50CCClean": {
+        "minimum": "$1,171",
+        "maximum": "$1,818",
+        "average": "$1,394"
+      },
+      "40F50/100/50CCSpeed": {
+        "minimum": "$1,478",
+        "maximum": "$2,314",
+        "average": "$1,769"
+      },
+      "40F50/100/50CCAccident": {
+        "minimum": "$1,867",
+        "maximum": "$3,012",
+        "average": "$2,273"
+      },
+      "40F50/100/50CCDUI": {
+        "minimum": "$1,490",
+        "maximum": "$2,367",
+        "average": "$1,802"
+      },
+      "40F100/300/100CCClean": {
+        "minimum": "$1,259",
+        "maximum": "$1,976",
+        "average": "$1,506"
+      },
+      "40F100/300/100CCSpeed": {
+        "minimum": "$1,587",
+        "maximum": "$2,512",
+        "average": "$1,908"
+      },
+      "40F100/300/100CCAccident": {
+        "minimum": "$2,011",
+        "maximum": "$3,275",
+        "average": "$2,458"
+      },
+      "40F100/300/100CCDUI": {
+        "minimum": "$1,598",
+        "maximum": "$2,565",
+        "average": "$1,941"
+      },
+      "40MStateMinLOClean": {
+        "minimum": "$553",
+        "maximum": "$993",
+        "average": "$722"
+      },
+      "40MStateMinLOSpeed": {
+        "minimum": "$689",
+        "maximum": "$993",
+        "average": "$722"
+      },
+      "40MStateMinLOAccident": {
+        "minimum": "$938",
+        "maximum": "$1,745",
+        "average": "$1,249"
+      },
+      "40MStateMinLODUI": {
+        "minimum": "$700",
+        "maximum": "$1,283",
+        "average": "$924"
+      },
+      "40M50/100/50LOClean": {
+        "minimum": "$618",
+        "maximum": "$1,114",
+        "average": "$805"
+      },
+      "40M50/100/50LOSpeed": {
+        "minimum": "$774",
+        "maximum": "$1,414",
+        "average": "$1,015"
+      },
+      "40M50/100/50LOAccident": {
+        "minimum": "$1,054",
+        "maximum": "$1,963",
+        "average": "$1,398"
+      },
+      "40M50/100/50LODUI": {
+        "minimum": "$785",
+        "maximum": "$1,441",
+        "average": "$1,033"
+      },
+      "40M50/100/50CCClean": {
+        "minimum": "$1,142",
+        "maximum": "$1,741",
+        "average": "$1,346"
+      },
+      "40M50/100/50CCSpeed": {
+        "minimum": "$1,445",
+        "maximum": "$2,230",
+        "average": "$1,717"
+      },
+      "40M50/100/50CCAccident": {
+        "minimum": "$1,831",
+        "maximum": "$2,919",
+        "average": "$2,214"
+      },
+      "40M50/100/50CCDUI": {
+        "minimum": "$1,459",
+        "maximum": "$2,285",
+        "average": "$1,750"
+      },
+      "40M100/300/100CCClean": {
+        "minimum": "$1,215",
+        "maximum": "$1,876",
+        "average": "$1,441"
+      },
+      "40M100/300/100CCSpeed": {
+        "minimum": "$1,540",
+        "maximum": "$2,403",
+        "average": "$1,838"
+      },
+      "40M100/300/100CCAccident": {
+        "minimum": "$1,959",
+        "maximum": "$3,154",
+        "average": "$2,379"
+      },
+      "40M100/300/100CCDUI": {
+        "minimum": "$1,553",
+        "maximum": "$2,458",
+        "average": "$1,871"
+      },
+      "70FStateMinLOClean": {
+        "minimum": "$594",
+        "maximum": "$1,073",
+        "average": "$778"
+      },
+      "70FStateMinLOSpeed": {
+        "minimum": "$813",
+        "maximum": "$1,498",
+        "average": "$1,076"
+      },
+      "70FStateMinLOAccident": {
+        "minimum": "$1,141",
+        "maximum": "$2,142",
+        "average": "$1,528"
+      },
+      "70FStateMinLODUI": {
+        "minimum": "$825",
+        "maximum": "$1,526",
+        "average": "$1,095"
+      },
+      "70F50/100/50LOClean": {
+        "minimum": "$666",
+        "maximum": "$1,205",
+        "average": "$869"
+      },
+      "70F50/100/50LOSpeed": {
+        "minimum": "$914",
+        "maximum": "$1,686",
+        "average": "$1,205"
+      },
+      "70F50/100/50LOAccident": {
+        "minimum": "$1,284",
+        "maximum": "$2,409",
+        "average": "$1,711"
+      },
+      "70F50/100/50LODUI": {
+        "minimum": "$926",
+        "maximum": "$1,715",
+        "average": "$1,224"
+      },
+      "70F50/100/50CCClean": {
+        "minimum": "$1,109",
+        "maximum": "$1,762",
+        "average": "$1,340"
+      },
+      "70F50/100/50CCSpeed": {
+        "minimum": "$1,523",
+        "maximum": "$2,471",
+        "average": "$1,865"
+      },
+      "70F50/100/50CCAccident": {
+        "minimum": "$1,972",
+        "maximum": "$3,320",
+        "average": "$2,467"
+      },
+      "70F50/100/50CCDUI": {
+        "minimum": "$1,538",
+        "maximum": "$2,528",
+        "average": "$1,902"
+      },
+      "70F100/300/100CCClean": {
+        "minimum": "$1,189",
+        "maximum": "$1,908",
+        "average": "$1,443"
+      },
+      "70F100/300/100CCSpeed": {
+        "minimum": "$1,636",
+        "maximum": "$2,675",
+        "average": "$2,009"
+      },
+      "70F100/300/100CCAccident": {
+        "minimum": "$2,129",
+        "maximum": "$3,608",
+        "average": "$2,669"
+      },
+      "70F100/300/100CCDUI": {
+        "minimum": "$1,650",
+        "maximum": "$2,733",
+        "average": "$2,045"
+      },
+      "70MStateMinLOClean": {
+        "minimum": "$679",
+        "maximum": "$1,243",
+        "average": "$897"
+      },
+      "70MStateMinLOSpeed": {
+        "minimum": "$921",
+        "maximum": "$1,713",
+        "average": "$1,227"
+      },
+      "70MStateMinLOAccident": {
+        "minimum": "$1,267",
+        "maximum": "$2,395",
+        "average": "$1,705"
+      },
+      "70MStateMinLODUI ": {
+        "minimum": "$932",
+        "maximum": "$1,740",
+        "average": "$1,245"
+      },
+      "70M50/100/50LOClean": {
+        "minimum": "$760",
+        "maximum": "$1,395",
+        "average": "$1,000"
+      },
+      "70M50/100/50LOSpeed": {
+        "minimum": "$1,033",
+        "maximum": "$1,924",
+        "average": "$1,372"
+      },
+      "70M50/100/50LOAccident": {
+        "minimum": "$1,425",
+        "maximum": "$2,692",
+        "average": "$1,907"
+      },
+      "70M50/100/50LODUI": {
+        "minimum": "$1,045",
+        "maximum": "$1,953",
+        "average": "$1,391"
+      },
+      "70M50/100/50CCClean": {
+        "minimum": "$1,299",
+        "maximum": "$2,084",
+        "average": "$1,582"
+      },
+      "70M50/100/50CCSpeed": {
+        "minimum": "$1,755",
+        "maximum": "$2,875",
+        "average": "$2,164"
+      },
+      "70M50/100/50CCAccident": {
+        "minimum": "$2,226",
+        "maximum": "$3,767",
+        "average": "$2,795"
+      },
+      "70M50/100/50CCDUI": {
+        "minimum": "$1,770",
+        "maximum": "$2,932",
+        "average": "$2,201"
+      },
+      "70M100/300/100CCClean": {
+        "minimum": "$1,388",
+        "maximum": "$2,248",
+        "average": "$1,696"
+      },
+      "70M100/300/100CCSpeed": {
+        "minimum": "$1,881",
+        "maximum": "$3,103",
+        "average": "$2,323"
+      },
+      "70M100/300/100CCAccident": {
+        "minimum": "$2,396",
+        "maximum": "$4,081",
+        "average": "$3,015"
+      },
+      "70M100/300/100CCDUI": {
+        "minimum": "$1,895",
+        "maximum": "$3,160",
+        "average": "$2,360"
+      }
+    },
+    {
+      "company": {
+        "name": "MetLife"
+      },
+      "40FStateMinLOClean": {
+        "minimum": "$361",
+        "maximum": "$899",
+        "average": "$692"
+      },
+      "40FStateMinLOSpeed": {
+        "minimum": "$361",
+        "maximum": "$899",
+        "average": "$692"
+      },
+      "40FStateMinLOAccident": {
+        "minimum": "$800",
+        "maximum": "$1,812",
+        "average": "$1,421"
+      },
+      "40FStateMinLODUI": {
+        "minimum": "$879",
+        "maximum": "$2,006",
+        "average": "$1,574"
+      },
+      "40F50/100/50LOClean": {
+        "minimum": "$491",
+        "maximum": "$1,180",
+        "average": "$918"
+      },
+      "40F50/100/50LOSpeed": {
+        "minimum": "$491",
+        "maximum": "$1,180",
+        "average": "$918"
+      },
+      "40F50/100/50LOAccident": {
+        "minimum": "$1,037",
+        "maximum": "$2,343",
+        "average": "$1,846"
+      },
+      "40F50/100/50LODUI": {
+        "minimum": "$1,152",
+        "maximum": "$2,601",
+        "average": "$2,050"
+      },
+      "40F50/100/50CCClean": {
+        "minimum": "$988",
+        "maximum": "$1,566",
+        "average": "$1,295"
+      },
+      "40F50/100/50CCSpeed": {
+        "minimum": "$988",
+        "maximum": "$1,566",
+        "average": "$1,295"
+      },
+      "40F50/100/50CCAccident": {
+        "minimum": "$2,186",
+        "maximum": "$3,271",
+        "average": "$2,760"
+      },
+      "40F50/100/50CCDUI": {
+        "minimum": "$2,446",
+        "maximum": "$3,660",
+        "average": "$3,082"
+      },
+      "40F100/300/100CCClean": {
+        "minimum": "$1,073",
+        "maximum": "$1,747",
+        "average": "$1,438"
+      },
+      "40F100/300/100CCSpeed": {
+        "minimum": "$1,073",
+        "maximum": "$1,747",
+        "average": "$1,438"
+      },
+      "40F100/300/100CCAccident": {
+        "minimum": "$2,342",
+        "maximum": "$3,625",
+        "average": "$3,036"
+      },
+      "40F100/300/100CCDUI": {
+        "minimum": "$2,619",
+        "maximum": "$4,057",
+        "average": "$3,391"
+      },
+      "40MStateMinLOClean": {
+        "minimum": "$371",
+        "maximum": "$911",
+        "average": "$703"
+      },
+      "40MStateMinLOSpeed": {
+        "minimum": "$371",
+        "maximum": "$911",
+        "average": "$703"
+      },
+      "40MStateMinLOAccident": {
+        "minimum": "$811",
+        "maximum": "$1,842",
+        "average": "$1,443"
+      },
+      "40MStateMinLODUI": {
+        "minimum": "$889",
+        "maximum": "$2,040",
+        "average": "$1,599"
+      },
+      "40M50/100/50LOClean": {
+        "minimum": "$501",
+        "maximum": "$1,200",
+        "average": "$934"
+      },
+      "40M50/100/50LOSpeed": {
+        "minimum": "$501",
+        "maximum": "$1,200",
+        "average": "$934"
+      },
+      "40M50/100/50LOAccident": {
+        "minimum": "$1,057",
+        "maximum": "$2,378",
+        "average": "$1,875"
+      },
+      "40M50/100/50LODUI": {
+        "minimum": "$1,166",
+        "maximum": "$2,645",
+        "average": "$2,083"
+      },
+      "40M50/100/50CCClean": {
+        "minimum": "$1,099",
+        "maximum": "$1,647",
+        "average": "$1,379"
+      },
+      "40M50/100/50CCSpeed": {
+        "minimum": "$1,099",
+        "maximum": "$1,647",
+        "average": "$1,379"
+      },
+      "40M50/100/50CCAccident": {
+        "minimum": "$2,424",
+        "maximum": "$3,464",
+        "average": "$2,940"
+      },
+      "40M50/100/50CCDUI": {
+        "minimum": "$2,714",
+        "maximum": "$3,865",
+        "average": "$3,285"
+      },
+      "40M100/300/100CCClean": {
+        "minimum": "$1,178",
+        "maximum": "$1,830",
+        "average": "$1,525"
+      },
+      "40M100/300/100CCSpeed": {
+        "minimum": "$1,178",
+        "maximum": "$1,830",
+        "average": "$1,525"
+      },
+      "40M100/300/100CCAccident": {
+        "minimum": "$2,574",
+        "maximum": "$3,822",
+        "average": "$3,221"
+      },
+      "40M100/300/100CCDUI": {
+        "minimum": "$2,887",
+        "maximum": "$4,268",
+        "average": "$3,601"
+      },
+      "70FStateMinLOClean": {
+        "minimum": "$339",
+        "maximum": "$841",
+        "average": "$645"
+      },
+      "70FStateMinLOSpeed": {
+        "minimum": "$339",
+        "maximum": "$841",
+        "average": "$645"
+      },
+      "70FStateMinLOAccident": {
+        "minimum": "$752",
+        "maximum": "$1,695",
+        "average": "$1,332"
+      },
+      "70FStateMinLODUI": {
+        "minimum": "$831",
+        "maximum": "$1,882",
+        "average": "$1,476"
+      },
+      "70F50/100/50LOClean": {
+        "minimum": "$460",
+        "maximum": "$1,095",
+        "average": "$855"
+      },
+      "70F50/100/50LOSpeed": {
+        "minimum": "$460",
+        "maximum": "$1,095",
+        "average": "$855"
+      },
+      "70F50/100/50LOAccident": {
+        "minimum": "$978",
+        "maximum": "$2,188",
+        "average": "$1,729"
+      },
+      "70F50/100/50LODUI": {
+        "minimum": "$1,081",
+        "maximum": "$2,431",
+        "average": "$1,917"
+      },
+      "70F50/100/50CCClean": {
+        "minimum": "$840",
+        "maximum": "$1,383",
+        "average": "$1,136"
+      },
+      "70F50/100/50CCSpeed": {
+        "minimum": "$840",
+        "maximum": "$1,383",
+        "average": "$1,136"
+      },
+      "70F50/100/50CCAccident": {
+        "minimum": "$1,885",
+        "maximum": "$2,909",
+        "average": "$2,440"
+      },
+      "70F50/100/50CCDUI": {
+        "minimum": "$2,103",
+        "maximum": "$3,242",
+        "average": "$2,721"
+      },
+      "70F100/300/100CCClean": {
+        "minimum": "$916",
+        "maximum": "$1,553",
+        "average": "$1,270"
+      },
+      "70F100/300/100CCSpeed": {
+        "minimum": "$916",
+        "maximum": "$1,553",
+        "average": "$1,270"
+      },
+      "70F100/300/100CCAccident": {
+        "minimum": "$2,028",
+        "maximum": "$3,244",
+        "average": "$2,698"
+      },
+      "70F100/300/100CCDUI": {
+        "minimum": "$2,260",
+        "maximum": "$3,612",
+        "average": "$3,011"
+      },
+      "70MStateMinLOClean": {
+        "minimum": "$377",
+        "maximum": "$926",
+        "average": "$717"
+      },
+      "70MStateMinLOSpeed": {
+        "minimum": "$377",
+        "maximum": "$926",
+        "average": "$717"
+      },
+      "70MStateMinLOAccident": {
+        "minimum": "$825",
+        "maximum": "$1,868",
+        "average": "$1,466"
+      },
+      "70MStateMinLODUI ": {
+        "minimum": "$905",
+        "maximum": "$2,077",
+        "average": "$1,625"
+      },
+      "70M50/100/50LOClean": {
+        "minimum": "$511",
+        "maximum": "$1,220",
+        "average": "$951"
+      },
+      "70M50/100/50LOSpeed": {
+        "minimum": "$511",
+        "maximum": "$1,220",
+        "average": "$951"
+      },
+      "70M50/100/50LOAccident": {
+        "minimum": "$1,073",
+        "maximum": "$2,417",
+        "average": "$1,906"
+      },
+      "70M50/100/50LODUI": {
+        "minimum": "$1,184",
+        "maximum": "$2,685",
+        "average": "$2,116"
+      },
+      "70M50/100/50CCClean": {
+        "minimum": "$939",
+        "maximum": "$1,527",
+        "average": "$1,257"
+      },
+      "70M50/100/50CCSpeed": {
+        "minimum": "$939",
+        "maximum": "$1,527",
+        "average": "$1,257"
+      },
+      "70M50/100/50CCAccident": {
+        "minimum": "$2,076",
+        "maximum": "$3,200",
+        "average": "$2,680"
+      },
+      "70M50/100/50CCDUI": {
+        "minimum": "$2,320",
+        "maximum": "$3,570",
+        "average": "$2,991"
+      },
+      "70M100/300/100CCClean": {
+        "minimum": "$1,016",
+        "maximum": "$1,716",
+        "average": "$1,404"
+      },
+      "70M100/300/100CCSpeed": {
+        "minimum": "$1,016",
+        "maximum": "$1,716",
+        "average": "$1,404"
+      },
+      "70M100/300/100CCAccident": {
+        "minimum": "$2,232",
+        "maximum": "$3,572",
+        "average": "$2,967"
+      },
+      "70M100/300/100CCDUI": {
+        "minimum": "$2,495",
+        "maximum": "$3,988",
+        "average": "$3,312"
+      }
+    },
+    {
+      "company": {
+        "name": "Nationwide"
+      },
+      "40FStateMinLOClean": {
+        "minimum": "$548",
+        "maximum": "$870",
+        "average": "$678"
+      },
+      "40FStateMinLOSpeed": {
+        "minimum": "$630",
+        "maximum": "$1,009",
+        "average": "$783"
+      },
+      "40FStateMinLOAccident": {
+        "minimum": "$853",
+        "maximum": "$1,399",
+        "average": "$1,075"
+      },
+      "40FStateMinLODUI": {
+        "minimum": "$1,023",
+        "maximum": "$1,697",
+        "average": "$1,299"
+      },
+      "40F50/100/50LOClean": {
+        "minimum": "$580",
+        "maximum": "$931",
+        "average": "$723"
+      },
+      "40F50/100/50LOSpeed": {
+        "minimum": "$664",
+        "maximum": "$1,076",
+        "average": "$831"
+      },
+      "40F50/100/50LOAccident": {
+        "minimum": "$902",
+        "maximum": "$1,484",
+        "average": "$1,136"
+      },
+      "40F50/100/50LODUI": {
+        "minimum": "$1,080",
+        "maximum": "$1,794",
+        "average": "$1,368"
+      },
+      "40F50/100/50CCClean": {
+        "minimum": "$1,011",
+        "maximum": "$1,498",
+        "average": "$1,203"
+      },
+      "40F50/100/50CCSpeed": {
+        "minimum": "$1,163",
+        "maximum": "$1,742",
+        "average": "$1,390"
+      },
+      "40F50/100/50CCAccident": {
+        "minimum": "$1,574",
+        "maximum": "$2,406",
+        "average": "$1,899"
+      },
+      "40F50/100/50CCDUI": {
+        "minimum": "$1,900",
+        "maximum": "$2,928",
+        "average": "$2,300"
+      },
+      "40F100/300/100CCClean": {
+        "minimum": "$1,060",
+        "maximum": "$1,596",
+        "average": "$1,272"
+      },
+      "40F100/300/100CCSpeed": {
+        "minimum": "$1,216",
+        "maximum": "$1,850",
+        "average": "$1,466"
+      },
+      "40F100/300/100CCAccident": {
+        "minimum": "$1,515",
+        "maximum": "$2,337",
+        "average": "$1,837"
+      },
+      "40F100/300/100CCDUI": {
+        "minimum": "$1,819",
+        "maximum": "$2,831",
+        "average": "$2,215"
+      },
+      "40MStateMinLOClean": {
+        "minimum": "$548",
+        "maximum": "$870",
+        "average": "$678"
+      },
+      "40MStateMinLOSpeed": {
+        "minimum": "$630",
+        "maximum": "$870",
+        "average": "$678"
+      },
+      "40MStateMinLOAccident": {
+        "minimum": "$849",
+        "maximum": "$1,391",
+        "average": "$1,069"
+      },
+      "40MStateMinLODUI": {
+        "minimum": "$1,019",
+        "maximum": "$1,689",
+        "average": "$1,293"
+      },
+      "40M50/100/50LOClean": {
+        "minimum": "$580",
+        "maximum": "$931",
+        "average": "$723"
+      },
+      "40M50/100/50LOSpeed": {
+        "minimum": "$664",
+        "maximum": "$1,076",
+        "average": "$831"
+      },
+      "40M50/100/50LOAccident": {
+        "minimum": "$897",
+        "maximum": "$1,476",
+        "average": "$1,130"
+      },
+      "40M50/100/50LODUI": {
+        "minimum": "$1,075",
+        "maximum": "$1,786",
+        "average": "$1,362"
+      },
+      "40M50/100/50CCClean": {
+        "minimum": "$1,021",
+        "maximum": "$1,513",
+        "average": "$1,215"
+      },
+      "40M50/100/50CCSpeed": {
+        "minimum": "$1,173",
+        "maximum": "$1,757",
+        "average": "$1,402"
+      },
+      "40M50/100/50CCAccident": {
+        "minimum": "$1,585",
+        "maximum": "$2,421",
+        "average": "$1,912"
+      },
+      "40M50/100/50CCDUI": {
+        "minimum": "$1,911",
+        "maximum": "$2,944",
+        "average": "$2,313"
+      },
+      "40M100/300/100CCClean": {
+        "minimum": "$1,070",
+        "maximum": "$1,611",
+        "average": "$1,284"
+      },
+      "40M100/300/100CCSpeed": {
+        "minimum": "$1,226",
+        "maximum": "$1,864",
+        "average": "$1,478"
+      },
+      "40M100/300/100CCAccident": {
+        "minimum": "$1,524",
+        "maximum": "$2,349",
+        "average": "$1,848"
+      },
+      "40M100/300/100CCDUI": {
+        "minimum": "$1,828",
+        "maximum": "$2,843",
+        "average": "$2,226"
+      },
+      "70FStateMinLOClean": {
+        "minimum": "$564",
+        "maximum": "$898",
+        "average": "$699"
+      },
+      "70FStateMinLOSpeed": {
+        "minimum": "$700",
+        "maximum": "$1,131",
+        "average": "$874"
+      },
+      "70FStateMinLOAccident": {
+        "minimum": "$871",
+        "maximum": "$1,429",
+        "average": "$1,098"
+      },
+      "70FStateMinLODUI": {
+        "minimum": "$1,041",
+        "maximum": "$1,728",
+        "average": "$1,322"
+      },
+      "70F50/100/50LOClean": {
+        "minimum": "$597",
+        "maximum": "$960",
+        "average": "$744"
+      },
+      "70F50/100/50LOSpeed": {
+        "minimum": "$681",
+        "maximum": "$1,105",
+        "average": "$852"
+      },
+      "70F50/100/50LOAccident": {
+        "minimum": "$920",
+        "maximum": "$1,515",
+        "average": "$1,160"
+      },
+      "70F50/100/50LODUI": {
+        "minimum": "$1,098",
+        "maximum": "$1,825",
+        "average": "$1,392"
+      },
+      "70F50/100/50CCClean": {
+        "minimum": "$1,003",
+        "maximum": "$1,492",
+        "average": "$1,195"
+      },
+      "70F50/100/50CCSpeed": {
+        "minimum": "$1,155",
+        "maximum": "$1,736",
+        "average": "$1,382"
+      },
+      "70F50/100/50CCAccident": {
+        "minimum": "$1,561",
+        "maximum": "$2,393",
+        "average": "$1,885"
+      },
+      "70F50/100/50CCDUI": {
+        "minimum": "$1,887",
+        "maximum": "$2,915",
+        "average": "$2,286"
+      },
+      "70F100/300/100CCClean": {
+        "minimum": "$1,055",
+        "maximum": "$1,595",
+        "average": "$1,268"
+      },
+      "70F100/300/100CCSpeed": {
+        "minimum": "$1,211",
+        "maximum": "$1,848",
+        "average": "$1,462"
+      },
+      "70F100/300/100CCAccident": {
+        "minimum": "$1,506",
+        "maximum": "$2,329",
+        "average": "$1,828"
+      },
+      "70F100/300/100CCDUI": {
+        "minimum": "$1,810",
+        "maximum": "$2,823",
+        "average": "$2,206"
+      },
+      "70MStateMinLOClean": {
+        "minimum": "$593",
+        "maximum": "$947",
+        "average": "$736"
+      },
+      "70MStateMinLOSpeed": {
+        "minimum": "$731",
+        "maximum": "$1,184",
+        "average": "$914"
+      },
+      "70MStateMinLOAccident": {
+        "minimum": "$910",
+        "maximum": "$1,498",
+        "average": "$1,150"
+      },
+      "70MStateMinLODUI ": {
+        "minimum": "$1,080",
+        "maximum": "$1,797",
+        "average": "$1,374"
+      },
+      "70M50/100/50LOClean": {
+        "minimum": "$626",
+        "maximum": "$1,011",
+        "average": "$782"
+      },
+      "70M50/100/50LOSpeed": {
+        "minimum": "$711",
+        "maximum": "$1,155",
+        "average": "$890"
+      },
+      "70M50/100/50LOAccident": {
+        "minimum": "$962",
+        "maximum": "$1,587",
+        "average": "$1,213"
+      },
+      "70M50/100/50LODUI": {
+        "minimum": "$1,139",
+        "maximum": "$1,897",
+        "average": "$1,445"
+      },
+      "70M50/100/50CCClean": {
+        "minimum": "$1,061",
+        "maximum": "$1,585",
+        "average": "$1,266"
+      },
+      "70M50/100/50CCSpeed": {
+        "minimum": "$1,213",
+        "maximum": "$1,829",
+        "average": "$1,454"
+      },
+      "70M50/100/50CCAccident": {
+        "minimum": "$1,639",
+        "maximum": "$2,517",
+        "average": "$1,980"
+      },
+      "70M50/100/50CCDUI": {
+        "minimum": "$1,964",
+        "maximum": "$3,040",
+        "average": "$2,382"
+      },
+      "70M100/300/100CCClean": {
+        "minimum": "$1,114",
+        "maximum": "$1,690",
+        "average": "$1,341"
+      },
+      "70M100/300/100CCSpeed": {
+        "minimum": "$1,270",
+        "maximum": "$1,944",
+        "average": "$1,535"
+      },
+      "70M100/300/100CCAccident": {
+        "minimum": "$1,578",
+        "maximum": "$2,446",
+        "average": "$1,918"
+      },
+      "70M100/300/100CCDUI": {
+        "minimum": "$1,882",
+        "maximum": "$2,940",
+        "average": "$2,296"
+      }
+    },
+    {
+      "company": {
+        "name": "State Farm"
+      },
+      "40FStateMinLOClean": {
+        "minimum": "$401",
+        "maximum": "$578",
+        "average": "$495"
+      },
+      "40FStateMinLOSpeed": {
+        "minimum": "$401",
+        "maximum": "$578",
+        "average": "$495"
+      },
+      "40FStateMinLOAccident": {
+        "minimum": "$495",
+        "maximum": "$713",
+        "average": "$609"
+      },
+      "40FStateMinLODUI": {
+        "minimum": "$710",
+        "maximum": "$1,025",
+        "average": "$872"
+      },
+      "40F50/100/50LOClean": {
+        "minimum": "$450",
+        "maximum": "$648",
+        "average": "$556"
+      },
+      "40F50/100/50LOSpeed": {
+        "minimum": "$450",
+        "maximum": "$648",
+        "average": "$556"
+      },
+      "40F50/100/50LOAccident": {
+        "minimum": "$553",
+        "maximum": "$796",
+        "average": "$681"
+      },
+      "40F50/100/50LODUI": {
+        "minimum": "$789",
+        "maximum": "$1,139",
+        "average": "$970"
+      },
+      "40F50/100/50CCClean": {
+        "minimum": "$708",
+        "maximum": "$977",
+        "average": "$841"
+      },
+      "40F50/100/50CCSpeed": {
+        "minimum": "$708",
+        "maximum": "$977",
+        "average": "$841"
+      },
+      "40F50/100/50CCAccident": {
+        "minimum": "$855",
+        "maximum": "$1,178",
+        "average": "$1,017"
+      },
+      "40F50/100/50CCDUI": {
+        "minimum": "$1,196",
+        "maximum": "$1,656",
+        "average": "$1,426"
+      },
+      "40F100/300/100CCClean": {
+        "minimum": "$773",
+        "maximum": "$1,073",
+        "average": "$924"
+      },
+      "40F100/300/100CCSpeed": {
+        "minimum": "$773",
+        "maximum": "$1,073",
+        "average": "$924"
+      },
+      "40F100/300/100CCAccident": {
+        "minimum": "$930",
+        "maximum": "$1,290",
+        "average": "$1,113"
+      },
+      "40F100/300/100CCDUI": {
+        "minimum": "$1,293",
+        "maximum": "$1,797",
+        "average": "$1,550"
+      },
+      "40MStateMinLOClean": {
+        "minimum": "$401",
+        "maximum": "$578",
+        "average": "$495"
+      },
+      "40MStateMinLOSpeed": {
+        "minimum": "$401",
+        "maximum": "$578",
+        "average": "$495"
+      },
+      "40MStateMinLOAccident": {
+        "minimum": "$495",
+        "maximum": "$713",
+        "average": "$609"
+      },
+      "40MStateMinLODUI": {
+        "minimum": "$710",
+        "maximum": "$1,025",
+        "average": "$872"
+      },
+      "40M50/100/50LOClean": {
+        "minimum": "$450",
+        "maximum": "$648",
+        "average": "$556"
+      },
+      "40M50/100/50LOSpeed": {
+        "minimum": "$450",
+        "maximum": "$648",
+        "average": "$556"
+      },
+      "40M50/100/50LOAccident": {
+        "minimum": "$553",
+        "maximum": "$796",
+        "average": "$681"
+      },
+      "40M50/100/50LODUI": {
+        "minimum": "$789",
+        "maximum": "$1,139",
+        "average": "$970"
+      },
+      "40M50/100/50CCClean": {
+        "minimum": "$708",
+        "maximum": "$977",
+        "average": "$841"
+      },
+      "40M50/100/50CCSpeed": {
+        "minimum": "$708",
+        "maximum": "$977",
+        "average": "$841"
+      },
+      "40M50/100/50CCAccident": {
+        "minimum": "$855",
+        "maximum": "$1,178",
+        "average": "$1,017"
+      },
+      "40M50/100/50CCDUI": {
+        "minimum": "$1,196",
+        "maximum": "$1,656",
+        "average": "$1,426"
+      },
+      "40M100/300/100CCClean": {
+        "minimum": "$773",
+        "maximum": "$1,073",
+        "average": "$924"
+      },
+      "40M100/300/100CCSpeed": {
+        "minimum": "$773",
+        "maximum": "$1,073",
+        "average": "$924"
+      },
+      "40M100/300/100CCAccident": {
+        "minimum": "$930",
+        "maximum": "$1,290",
+        "average": "$1,113"
+      },
+      "40M100/300/100CCDUI": {
+        "minimum": "$1,293",
+        "maximum": "$1,797",
+        "average": "$1,550"
+      },
+      "70FStateMinLOClean": {
+        "minimum": "$395",
+        "maximum": "$570",
+        "average": "$487"
+      },
+      "70FStateMinLOSpeed": {
+        "minimum": "$395",
+        "maximum": "$570",
+        "average": "$487"
+      },
+      "70FStateMinLOAccident": {
+        "minimum": "$488",
+        "maximum": "$704",
+        "average": "$601"
+      },
+      "70FStateMinLODUI": {
+        "minimum": "$703",
+        "maximum": "$1,016",
+        "average": "$864"
+      },
+      "70F50/100/50LOClean": {
+        "minimum": "$444",
+        "maximum": "$639",
+        "average": "$548"
+      },
+      "70F50/100/50LOSpeed": {
+        "minimum": "$444",
+        "maximum": "$639",
+        "average": "$548"
+      },
+      "70F50/100/50LOAccident": {
+        "minimum": "$545",
+        "maximum": "$786",
+        "average": "$672"
+      },
+      "70F50/100/50LODUI": {
+        "minimum": "$782",
+        "maximum": "$1,128",
+        "average": "$961"
+      },
+      "70F50/100/50CCClean": {
+        "minimum": "$679",
+        "maximum": "$935",
+        "average": "$809"
+      },
+      "70F50/100/50CCSpeed": {
+        "minimum": "$679",
+        "maximum": "$935",
+        "average": "$809"
+      },
+      "70F50/100/50CCAccident": {
+        "minimum": "$825",
+        "maximum": "$1,138",
+        "average": "$984"
+      },
+      "70F50/100/50CCDUI": {
+        "minimum": "$1,166",
+        "maximum": "$1,622",
+        "average": "$1,393"
+      },
+      "70F100/300/100CCClean": {
+        "minimum": "$743",
+        "maximum": "$1,031",
+        "average": "$891"
+      },
+      "70F100/300/100CCSpeed": {
+        "minimum": "$743",
+        "maximum": "$1,031",
+        "average": "$891"
+      },
+      "70F100/300/100CCAccident": {
+        "minimum": "$898",
+        "maximum": "$1,247",
+        "average": "$1,079"
+      },
+      "70F100/300/100CCDUI": {
+        "minimum": "$1,262",
+        "maximum": "$1,762",
+        "average": "$1,516"
+      },
+      "70MStateMinLOClean": {
+        "minimum": "$395",
+        "maximum": "$570",
+        "average": "$487"
+      },
+      "70MStateMinLOSpeed": {
+        "minimum": "$395",
+        "maximum": "$570",
+        "average": "$487"
+      },
+      "70MStateMinLOAccident": {
+        "minimum": "$488",
+        "maximum": "$704",
+        "average": "$601"
+      },
+      "70MStateMinLODUI ": {
+        "minimum": "$703",
+        "maximum": "$1,016",
+        "average": "$864"
+      },
+      "70M50/100/50LOClean": {
+        "minimum": "$444",
+        "maximum": "$639",
+        "average": "$548"
+      },
+      "70M50/100/50LOSpeed": {
+        "minimum": "$444",
+        "maximum": "$639",
+        "average": "$548"
+      },
+      "70M50/100/50LOAccident": {
+        "minimum": "$545",
+        "maximum": "$786",
+        "average": "$672"
+      },
+      "70M50/100/50LODUI": {
+        "minimum": "$782",
+        "maximum": "$1,128",
+        "average": "$961"
+      },
+      "70M50/100/50CCClean": {
+        "minimum": "$679",
+        "maximum": "$935",
+        "average": "$809"
+      },
+      "70M50/100/50CCSpeed": {
+        "minimum": "$679",
+        "maximum": "$935",
+        "average": "$809"
+      },
+      "70M50/100/50CCAccident": {
+        "minimum": "$825",
+        "maximum": "$1,138",
+        "average": "$984"
+      },
+      "70M50/100/50CCDUI": {
+        "minimum": "$1,166",
+        "maximum": "$1,622",
+        "average": "$1,393"
+      },
+      "70M100/300/100CCClean": {
+        "minimum": "$743",
+        "maximum": "$1,031",
+        "average": "$891"
+      },
+      "70M100/300/100CCSpeed": {
+        "minimum": "$743",
+        "maximum": "$1,031",
+        "average": "$891"
+      },
+      "70M100/300/100CCAccident": {
+        "minimum": "$898",
+        "maximum": "$1,247",
+        "average": "$1,079"
+      },
+      "70M100/300/100CCDUI": {
+        "minimum": "$1,262",
+        "maximum": "$1,762",
+        "average": "$1,516"
+      }
+    },
+    {
+      "company": {
+        "name": "The General"
+      },
+      "40FStateMinLOClean": {
+        "minimum": "$822",
+        "maximum": "$2,026",
+        "average": "$1,161"
+      },
+      "40FStateMinLOSpeed": {
+        "minimum": "$822",
+        "maximum": "$2,026",
+        "average": "$1,161"
+      },
+      "40FStateMinLOAccident": {
+        "minimum": "$1,015",
+        "maximum": "$2,561",
+        "average": "$1,463"
+      },
+      "40FStateMinLODUI": {
+        "minimum": "$911",
+        "maximum": "$2,274",
+        "average": "$1,301"
+      },
+      "40F50/100/50LOClean": {
+        "minimum": "$870",
+        "maximum": "$2,217",
+        "average": "$1,241"
+      },
+      "40F50/100/50LOSpeed": {
+        "minimum": "$870",
+        "maximum": "$2,217",
+        "average": "$1,241"
+      },
+      "40F50/100/50LOAccident": {
+        "minimum": "$1,070",
+        "maximum": "$2,771",
+        "average": "$1,554"
+      },
+      "40F50/100/50LODUI": {
+        "minimum": "$962",
+        "maximum": "$2,473",
+        "average": "$1,386"
+      },
+      "40F50/100/50CCClean": {
+        "minimum": "$1,425",
+        "maximum": "$3,329",
+        "average": "$2,058"
+      },
+      "40F50/100/50CCSpeed": {
+        "minimum": "$1,425",
+        "maximum": "$3,329",
+        "average": "$2,058"
+      },
+      "40F50/100/50CCAccident": {
+        "minimum": "$1,787",
+        "maximum": "$4,224",
+        "average": "$2,600"
+      },
+      "40F50/100/50CCDUI": {
+        "minimum": "$1,581",
+        "maximum": "$3,709",
+        "average": "$2,291"
+      },
+      "40F100/300/100CCClean": {
+        "minimum": "$1,634",
+        "maximum": "$4,145",
+        "average": "$2,424"
+      },
+      "40F100/300/100CCSpeed": {
+        "minimum": "$1,634",
+        "maximum": "$4,145",
+        "average": "$2,424"
+      },
+      "40F100/300/100CCAccident": {
+        "minimum": "$2,048",
+        "maximum": "$5,178",
+        "average": "$3,054"
+      },
+      "40F100/300/100CCDUI": {
+        "minimum": "$1,814",
+        "maximum": "$4,602",
+        "average": "$2,698"
+      },
+      "40MStateMinLOClean": {
+        "minimum": "$920",
+        "maximum": "$2,329",
+        "average": "$1,317"
+      },
+      "40MStateMinLOSpeed": {
+        "minimum": "$920",
+        "maximum": "$2,329",
+        "average": "$1,317"
+      },
+      "40MStateMinLOAccident": {
+        "minimum": "$1,146",
+        "maximum": "$2,955",
+        "average": "$1,670"
+      },
+      "40MStateMinLODUI": {
+        "minimum": "$1,025",
+        "maximum": "$2,619",
+        "average": "$1,481"
+      },
+      "40M50/100/50LOClean": {
+        "minimum": "$976",
+        "maximum": "$2,553",
+        "average": "$1,410"
+      },
+      "40M50/100/50LOSpeed": {
+        "minimum": "$976",
+        "maximum": "$2,553",
+        "average": "$1,410"
+      },
+      "40M50/100/50LOAccident": {
+        "minimum": "$1,209",
+        "maximum": "$3,201",
+        "average": "$1,776"
+      },
+      "40M50/100/50LODUI": {
+        "minimum": "$1,084",
+        "maximum": "$2,853",
+        "average": "$1,580"
+      },
+      "40M50/100/50CCClean": {
+        "minimum": "$1,617",
+        "maximum": "$3,838",
+        "average": "$2,353"
+      },
+      "40M50/100/50CCSpeed": {
+        "minimum": "$1,617",
+        "maximum": "$3,838",
+        "average": "$2,353"
+      },
+      "40M50/100/50CCAccident": {
+        "minimum": "$2,035",
+        "maximum": "$4,878",
+        "average": "$2,983"
+      },
+      "40M50/100/50CCDUI": {
+        "minimum": "$1,796",
+        "maximum": "$4,281",
+        "average": "$2,625"
+      },
+      "40M100/300/100CCClean": {
+        "minimum": "$1,861",
+        "maximum": "$4,792",
+        "average": "$2,781"
+      },
+      "40M100/300/100CCSpeed": {
+        "minimum": "$1,861",
+        "maximum": "$4,792",
+        "average": "$2,781"
+      },
+      "40M100/300/100CCAccident": {
+        "minimum": "$2,341",
+        "maximum": "$5,997",
+        "average": "$3,515"
+      },
+      "40M100/300/100CCDUI": {
+        "minimum": "$2,069",
+        "maximum": "$5,324",
+        "average": "$3,101"
+      },
+      "70FStateMinLOClean": {
+        "minimum": "$1,038",
+        "maximum": "$2,695",
+        "average": "$1,505"
+      },
+      "70FStateMinLOSpeed": {
+        "minimum": "$1,038",
+        "maximum": "$2,695",
+        "average": "$1,505"
+      },
+      "70FStateMinLOAccident": {
+        "minimum": "$1,302",
+        "maximum": "$3,430",
+        "average": "$1,920"
+      },
+      "70FStateMinLODUI": {
+        "minimum": "$1,161",
+        "maximum": "$3,035",
+        "average": "$1,697"
+      },
+      "70F50/100/50LOClean": {
+        "minimum": "$1,103",
+        "maximum": "$2,957",
+        "average": "$1,614"
+      },
+      "70F50/100/50LOSpeed": {
+        "minimum": "$1,103",
+        "maximum": "$2,957",
+        "average": "$1,614"
+      },
+      "70F50/100/50LOAccident": {
+        "minimum": "$1,378",
+        "maximum": "$3,718",
+        "average": "$2,045"
+      },
+      "70F50/100/50LODUI": {
+        "minimum": "$1,231",
+        "maximum": "$3,310",
+        "average": "$1,814"
+      },
+      "70F50/100/50CCClean": {
+        "minimum": "$1,672",
+        "maximum": "$4,156",
+        "average": "$2,464"
+      },
+      "70F50/100/50CCSpeed": {
+        "minimum": "$1,672",
+        "maximum": "$4,156",
+        "average": "$2,464"
+      },
+      "70F50/100/50CCAccident": {
+        "minimum": "$2,119",
+        "maximum": "$5,270",
+        "average": "$3,142"
+      },
+      "70F50/100/50CCDUI": {
+        "minimum": "$1,868",
+        "maximum": "$4,648",
+        "average": "$2,762"
+      },
+      "70F100/300/100CCClean": {
+        "minimum": "$1,959",
+        "maximum": "$5,278",
+        "average": "$2,968"
+      },
+      "70F100/300/100CCSpeed": {
+        "minimum": "$1,959",
+        "maximum": "$5,278",
+        "average": "$2,968"
+      },
+      "70F100/300/100CCAccident": {
+        "minimum": "$2,478",
+        "maximum": "$6,615",
+        "average": "$3,766"
+      },
+      "70F100/300/100CCDUI": {
+        "minimum": "$2,189",
+        "maximum": "$5,876",
+        "average": "$3,322"
+      },
+      "70MStateMinLOClean": {
+        "minimum": "$1,198",
+        "maximum": "$3,192",
+        "average": "$1,760"
+      },
+      "70MStateMinLOSpeed": {
+        "minimum": "$1,198",
+        "maximum": "$3,192",
+        "average": "$1,760"
+      },
+      "70MStateMinLOAccident": {
+        "minimum": "$1,517",
+        "maximum": "$4,076",
+        "average": "$2,260"
+      },
+      "70MStateMinLODUI ": {
+        "minimum": "$1,346",
+        "maximum": "$3,601",
+        "average": "$1,991"
+      },
+      "70M50/100/50LOClean": {
+        "minimum": "$1,278",
+        "maximum": "$3,507",
+        "average": "$1,892"
+      },
+      "70M50/100/50LOSpeed": {
+        "minimum": "$1,278",
+        "maximum": "$3,507",
+        "average": "$1,892"
+      },
+      "70M50/100/50LOAccident": {
+        "minimum": "$1,609",
+        "maximum": "$4,423",
+        "average": "$2,409"
+      },
+      "70M50/100/50LODUI": {
+        "minimum": "$1,431",
+        "maximum": "$3,931",
+        "average": "$2,132"
+      },
+      "70M50/100/50CCClean": {
+        "minimum": "$1,975",
+        "maximum": "$4,984",
+        "average": "$2,937"
+      },
+      "70M50/100/50CCSpeed": {
+        "minimum": "$1,975",
+        "maximum": "$4,984",
+        "average": "$2,937"
+      },
+      "70M50/100/50CCAccident": {
+        "minimum": "$2,518",
+        "maximum": "$6,338",
+        "average": "$3,760"
+      },
+      "70M50/100/50CCDUI": {
+        "minimum": "$2,211",
+        "maximum": "$5,580",
+        "average": "$3,298"
+      },
+      "70M100/300/100CCClean": {
+        "minimum": "$2,321",
+        "maximum": "$6,333",
+        "average": "$3,543"
+      },
+      "70M100/300/100CCSpeed": {
+        "minimum": "$2,321",
+        "maximum": "$6,333",
+        "average": "$3,543"
+      },
+      "70M100/300/100CCAccident": {
+        "minimum": "$2,951",
+        "maximum": "$7,953",
+        "average": "$4,512"
+      },
+      "70M100/300/100CCDUI": {
+        "minimum": "$2,597",
+        "maximum": "$7,058",
+        "average": "$3,971"
+      }
+    },
+    {
+      "company": {
+        "name": "USAA"
+      },
+      "40FStateMinLOClean": {
+        "minimum": "$342",
+        "maximum": "$509",
+        "average": "$430"
+      },
+      "40FStateMinLOSpeed": {
+        "minimum": "$383",
+        "maximum": "$574",
+        "average": "$484"
+      },
+      "40FStateMinLOAccident": {
+        "minimum": "$549",
+        "maximum": "$833",
+        "average": "$699"
+      },
+      "40FStateMinLODUI": {
+        "minimum": "$522",
+        "maximum": "$790",
+        "average": "$665"
+      },
+      "40F50/100/50LOClean": {
+        "minimum": "$376",
+        "maximum": "$564",
+        "average": "$474"
+      },
+      "40F50/100/50LOSpeed": {
+        "minimum": "$423",
+        "maximum": "$637",
+        "average": "$534"
+      },
+      "40F50/100/50LOAccident": {
+        "minimum": "$606",
+        "maximum": "$924",
+        "average": "$771"
+      },
+      "40F50/100/50LODUI": {
+        "minimum": "$571",
+        "maximum": "$867",
+        "average": "$727"
+      },
+      "40F50/100/50CCClean": {
+        "minimum": "$684",
+        "maximum": "$913",
+        "average": "$786"
+      },
+      "40F50/100/50CCSpeed": {
+        "minimum": "$765",
+        "maximum": "$1,026",
+        "average": "$881"
+      },
+      "40F50/100/50CCAccident": {
+        "minimum": "$1,047",
+        "maximum": "$1,438",
+        "average": "$1,225"
+      },
+      "40F50/100/50CCDUI": {
+        "minimum": "$1,004",
+        "maximum": "$1,372",
+        "average": "$1,171"
+      },
+      "40F100/300/100CCClean": {
+        "minimum": "$747",
+        "maximum": "$1,009",
+        "average": "$866"
+      },
+      "40F100/300/100CCSpeed": {
+        "minimum": "$837",
+        "maximum": "$1,136",
+        "average": "$972"
+      },
+      "40F100/300/100CCAccident": {
+        "minimum": "$1,152",
+        "maximum": "$1,597",
+        "average": "$1,357"
+      },
+      "40F100/300/100CCDUI": {
+        "minimum": "$1,091",
+        "maximum": "$1,505",
+        "average": "$1,281"
+      },
+      "40MStateMinLOClean": {
+        "minimum": "$337",
+        "maximum": "$502",
+        "average": "$424"
+      },
+      "40MStateMinLOSpeed": {
+        "minimum": "$378",
+        "maximum": "$502",
+        "average": "$424"
+      },
+      "40MStateMinLOAccident": {
+        "minimum": "$542",
+        "maximum": "$822",
+        "average": "$689"
+      },
+      "40MStateMinLODUI": {
+        "minimum": "$515",
+        "maximum": "$779",
+        "average": "$655"
+      },
+      "40M50/100/50LOClean": {
+        "minimum": "$372",
+        "maximum": "$557",
+        "average": "$467"
+      },
+      "40M50/100/50LOSpeed": {
+        "minimum": "$417",
+        "maximum": "$629",
+        "average": "$527"
+      },
+      "40M50/100/50LOAccident": {
+        "minimum": "$599",
+        "maximum": "$913",
+        "average": "$761"
+      },
+      "40M50/100/50LODUI": {
+        "minimum": "$563",
+        "maximum": "$855",
+        "average": "$717"
+      },
+      "40M50/100/50CCClean": {
+        "minimum": "$708",
+        "maximum": "$934",
+        "average": "$806"
+      },
+      "40M50/100/50CCSpeed": {
+        "minimum": "$792",
+        "maximum": "$1,051",
+        "average": "$904"
+      },
+      "40M50/100/50CCAccident": {
+        "minimum": "$1,082",
+        "maximum": "$1,470",
+        "average": "$1,255"
+      },
+      "40M50/100/50CCDUI": {
+        "minimum": "$1,038",
+        "maximum": "$1,403",
+        "average": "$1,200"
+      },
+      "40M100/300/100CCClean": {
+        "minimum": "$770",
+        "maximum": "$1,030",
+        "average": "$885"
+      },
+      "40M100/300/100CCSpeed": {
+        "minimum": "$864",
+        "maximum": "$1,160",
+        "average": "$995"
+      },
+      "40M100/300/100CCAccident": {
+        "minimum": "$1,186",
+        "maximum": "$1,629",
+        "average": "$1,387"
+      },
+      "40M100/300/100CCDUI": {
+        "minimum": "$1,125",
+        "maximum": "$1,535",
+        "average": "$1,310"
+      },
+      "70FStateMinLOClean": {
+        "minimum": "$401",
+        "maximum": "$601",
+        "average": "$507"
+      },
+      "70FStateMinLOSpeed": {
+        "minimum": "$451",
+        "maximum": "$679",
+        "average": "$572"
+      },
+      "70FStateMinLOAccident": {
+        "minimum": "$727",
+        "maximum": "$1,110",
+        "average": "$929"
+      },
+      "70FStateMinLODUI": {
+        "minimum": "$621",
+        "maximum": "$944",
+        "average": "$794"
+      },
+      "70F50/100/50LOClean": {
+        "minimum": "$440",
+        "maximum": "$664",
+        "average": "$557"
+      },
+      "70F50/100/50LOSpeed": {
+        "minimum": "$496",
+        "maximum": "$751",
+        "average": "$629"
+      },
+      "70F50/100/50LOAccident": {
+        "minimum": "$799",
+        "maximum": "$1,224",
+        "average": "$1,021"
+      },
+      "70F50/100/50LODUI": {
+        "minimum": "$678",
+        "maximum": "$1,033",
+        "average": "$866"
+      },
+      "70F50/100/50CCClean": {
+        "minimum": "$730",
+        "maximum": "$1,000",
+        "average": "$856"
+      },
+      "70F50/100/50CCSpeed": {
+        "minimum": "$818",
+        "maximum": "$1,125",
+        "average": "$961"
+      },
+      "70F50/100/50CCAccident": {
+        "minimum": "$1,246",
+        "maximum": "$1,764",
+        "average": "$1,493"
+      },
+      "70F50/100/50CCDUI": {
+        "minimum": "$1,086",
+        "maximum": "$1,520",
+        "average": "$1,291"
+      },
+      "70F100/300/100CCClean": {
+        "minimum": "$801",
+        "maximum": "$1,108",
+        "average": "$946"
+      },
+      "70F100/300/100CCSpeed": {
+        "minimum": "$899",
+        "maximum": "$1,249",
+        "average": "$1,064"
+      },
+      "70F100/300/100CCAccident": {
+        "minimum": "$1,375",
+        "maximum": "$1,962",
+        "average": "$1,657"
+      },
+      "70F100/300/100CCDUI": {
+        "minimum": "$1,186",
+        "maximum": "$1,673",
+        "average": "$1,418"
+      },
+      "70MStateMinLOClean": {
+        "minimum": "$404",
+        "maximum": "$605",
+        "average": "$510"
+      },
+      "70MStateMinLOSpeed": {
+        "minimum": "$454",
+        "maximum": "$684",
+        "average": "$576"
+      },
+      "70MStateMinLOAccident": {
+        "minimum": "$732",
+        "maximum": "$1,118",
+        "average": "$936"
+      },
+      "70MStateMinLODUI ": {
+        "minimum": "$626",
+        "maximum": "$951",
+        "average": "$799"
+      },
+      "70M50/100/50LOClean": {
+        "minimum": "$443",
+        "maximum": "$668",
+        "average": "$560"
+      },
+      "70M50/100/50LOSpeed": {
+        "minimum": "$499",
+        "maximum": "$756",
+        "average": "$633"
+      },
+      "70M50/100/50LOAccident": {
+        "minimum": "$805",
+        "maximum": "$1,234",
+        "average": "$1,028"
+      },
+      "70M50/100/50LODUI": {
+        "minimum": "$683",
+        "maximum": "$1,041",
+        "average": "$872"
+      },
+      "70M50/100/50CCClean": {
+        "minimum": "$756",
+        "maximum": "$1,028",
+        "average": "$881"
+      },
+      "70M50/100/50CCSpeed": {
+        "minimum": "$847",
+        "maximum": "$1,158",
+        "average": "$990"
+      },
+      "70M50/100/50CCAccident": {
+        "minimum": "$1,288",
+        "maximum": "$1,814",
+        "average": "$1,536"
+      },
+      "70M50/100/50CCDUI": {
+        "minimum": "$1,125",
+        "maximum": "$1,564",
+        "average": "$1,330"
+      },
+      "70M100/300/100CCClean": {
+        "minimum": "$828",
+        "maximum": "$1,138",
+        "average": "$972"
+      },
+      "70M100/300/100CCSpeed": {
+        "minimum": "$929",
+        "maximum": "$1,283",
+        "average": "$1,094"
+      },
+      "70M100/300/100CCAccident": {
+        "minimum": "$1,419",
+        "maximum": "$2,013",
+        "average": "$1,702"
+      },
+      "70M100/300/100CCDUI": {
+        "minimum": "$1,226",
+        "maximum": "$1,718",
+        "average": "$1,458"
+      }
+    }
+  ],
+  "cc": {
+    "StateMin1000": "0.78",
+    "50/100/501000": "0.90",
+    "50/100/50500": "0.98",
+    "100/300/100500": "1.08"
+  }
+}
