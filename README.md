@@ -2,7 +2,7 @@
 
 In this project, we implement three visualizations via Shiny App to help users choose the cars suitable for them.
 
-The first part: [Vehicle specification](https://whvicc-shunyi-huang.shinyapps.io/679_Final/)
+The first part: [Vehicle specification](https://whvicc-shunyi-huang.shinyapps.io/specification/)
 
 The seconde part: [Insurance]()
 
