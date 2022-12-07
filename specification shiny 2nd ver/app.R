@@ -10,15 +10,13 @@ library(rvest)
 library(dplyr)
 library(stringr)
 library(rvest)
-cars <- read.csv('./USA_cars.csv')
+cars <- read.csv('USA_cars.csv')
 
 
 
 
 
 createLink <- function(year, trim) {
-  # sprintf('<a href="https://www.google.com/#q=%s" target="_blank" class="btn btn-primary">More detail</a>',val)
-  
   val = paste0(year, ' ' ,trim)
   sprintf('<a href="https://www.google.com/search?q=%s" target="_blank" class="btn btn-primary">More detail</a>',val)
   
@@ -103,18 +101,18 @@ ui <- fluidPage(
   fluidRow(
     column(3, wellPanel(
       titlePanel('Basic Search'),
-      textOutput('hint'),
       uiOutput('make_selection'),
       uiOutput('model_selection'),
-      uiOutput('year_selection')
+      uiOutput('year_selection'),
+      uiOutput('slider')
     ),
     
     wellPanel(
       titlePanel('Advanced Search'),
       uiOutput('body_type_selection'),
-      uiOutput('slider')
-    ),
-    textOutput('range')
+      uiOutput('fuel_type_selection')
+    )
+    #textOutput('range')
     ),
     column(9, dataTableOutput('vehicle_sub'))
   )
@@ -124,17 +122,6 @@ ui <- fluidPage(
 
 
 server <- function(input, output) {
-  # output$range = renderText({
-  #   #temp = cars %>% filter(between(Price, 10000, 20000))
-  #   #print(unique(temp$Make))
-  #   print(cbind(input$Price[1], input$Price[2]))
-  # })
-  
-  #Text output
-  output$hint = renderText({
-    print('please select make before model' )
-  })
-  
   #make selection
   output$make_selection = renderUI({
     selectInput("Make", "Make", choices = unique(cars$Make), multiple = TRUE)
@@ -152,34 +139,34 @@ server <- function(input, output) {
   output$year_selection = renderUI({
     if (input_provided(input$Make) == TRUE){
       selectInput('Year','Year',
-                  choice = unique(cars[(cars$Make == input$Make),]$Year),
+                  choice = unique(cars[(cars$Make %in% input$Make),]$Year),
                   multiple = TRUE)
     }
     else if (input_provided(input$Make) & input_provided(input$Model)){
       selectInput('Year','Year',
-                  choice = unique(cars[(cars$Make == input$Make)&
-                                         (cars$Model == input$Model),'Year']),
+                  choice = unique(cars[(cars$Make %in% input$Make)&
+                                         (cars$Model  %in% input$Model),'Year']),
                   multiple = TRUE)
       
     }
     else if (input_provided(input$Body_type)){
       selectInput('Year','Year',
-                  choice = unique(cars[(cars$Body_type == input$Body_type),'Year']),
+                  choice = unique(cars[(cars$Body_type %in% input$Body_type),'Year']),
                   multiple = TRUE)
       
     }
     else if(input_provided(input$Make) & input_provided(input$Body_type)){
       selectInput('Year','Year',
-                  choice = unique(cars[(cars$Make == input$Make)&
-                                         (cars$Body_type == input$Body_type),'Year']),
+                  choice = unique(cars[(cars$Make %in% input$Make)&
+                                         (cars$Body_type %in% input$Body_type),'Year']),
                   multiple = TRUE)
       
     }
     else if(input_provided(input$Make) & input_provided(input$Model) & input_provided(input$Body_type)){
       selectInput('Year','Year',
-                  choice = unique(cars[(cars$Make == input$Make)&
-                                         (cars$Model == input$Model) &
-                                         (cars$Body_type == input$Body_type),'Year']),
+                  choice = unique(cars[(cars$Make %in% input$Make)&
+                                         (cars$Model  %in% input$Model) &
+                                         (cars$Body_type %in% input$Body_type),'Year']),
                   multiple = TRUE)
     }
     else{
@@ -194,31 +181,31 @@ server <- function(input, output) {
   output$body_type_selection = renderUI({
     if (input_provided(input$Make)){
       selectInput('Body_type','Body Type',
-                  choice = unique(cars[(cars$Make == input$Make),]$Body_type),
+                  choice = unique(cars[(cars$Make %in% input$Make),]$Body_type),
                   multiple = TRUE)
     }
     else if(input_provided(input$Year)){
       selectInput('Body_type','Body Type',
-                  choice = unique(cars[(cars$Year == input$Year),]$Body_type),
+                  choice = unique(cars[(cars$Year %in% input$Year),]$Body_type),
                   multiple = TRUE)
     }
     else if(input_provided(input$Make) & input_provided(input$Year)){
       selectInput('Body_type','Body Type',
-                  choice = unique(cars[(cars$Make == input$Make)&
+                  choice = unique(cars[(cars$Make %in% input$Make)&
                                          (cars$Model == input$Year),]$Body_type),
                   multiple = TRUE)
     }
     else if (input_provided(input$Model) & input_provided(input$Make)){
       selectInput('Body_type','Body Type',
-                  choice = unique(cars[(cars$Make == input$Make)&
-                                         (cars$Model == input$Model),]$Body_type),
+                  choice = unique(cars[(cars$Make %in% input$Make)&
+                                         (cars$Model  %in% input$Model),]$Body_type),
                   multiple = TRUE)
     }
     else if (input_provided(input$Make) & input_provided(input$Model) & input_provided(input$Year)){
       selectInput('Body_type','Body Type',
-                  choice = unique(cars[(cars$Make == input$Make)&
-                                         (cars$Model == input$Model) &
-                                         (cars$Year == input$Year),]$Body_type),
+                  choice = unique(cars[(cars$Make %in% input$Make)&
+                                         (cars$Model  %in% input$Model) &
+                                         (cars$Year %in% input$Year),]$Body_type),
                   multiple = TRUE)
     }
     
@@ -236,67 +223,67 @@ server <- function(input, output) {
   output$slider = renderUI({
     #单一option
     if (input_provided(input$Make)){
-      cur_df = cars[cars$Make == input$Make,]
+      cur_df = cars[cars$Make %in% input$Make,]
       sliderInput('Price','Price', min = min(cur_df$Price), max = max(cur_df$Price), value = c(min(cur_df$Price),max(cur_df$Price)) ,pre = '$', sep = ',', animate = TRUE)
     }
     else if(input_provided(input$Year)){
-      cur_df = cars[cars$Year == input$Year,]
+      cur_df = cars[cars$Year %in% input$Year,]
       sliderInput('Price','Price', min = min(cur_df$Price),  max = max(cur_df$Price), value = c(min(cur_df$Price),max(cur_df$Price)) ,pre = '$', sep = ',', animate = TRUE)
     }
     else if(input_provided(input$Body_type)){
-      cur_df = cars[cars$Body_type == input$Body_type,]
+      cur_df = cars[cars$Body_type %in% input$Body_type,]
       sliderInput('Price','Price',min = min(cur_df$Price), max = max(cur_df$Price), value =c(min(cur_df$Price),max(cur_df$Price)) ,pre = '$', sep = ',', animate = TRUE)
     }
     #双option
     else if(input_provided(input$Make) & input_provided(input$Model)){
-      cur_df = cars[(cars$Make == input$Make)&
-                      (cars$Model == input$Model),]
+      cur_df = cars[(cars$Make %in% input$Make)&
+                      (cars$Model  %in% input$Model),]
       sliderInput('Price','Price',min = min(cur_df$Price), max = max(cur_df$Price), value = c(min(cur_df$Price),max(cur_df$Price)) ,pre = '$', sep = ',', animate = TRUE)
     }
     else if(input_provided(input$Make) & input_provided(input$Year)){
-      cur_df = cars[(cars$Make == input$Make)&
-                      (cars$Year == input$Year),]
+      cur_df = cars[(cars$Make %in% input$Make)&
+                      (cars$Year %in% input$Year),]
       sliderInput('Price','Price', min = min(cur_df$Price), max = max(cur_df$Price), value = c(min(cur_df$Price),max(cur_df$Price)) ,pre = '$', sep = ',', animate = TRUE)
     }
     else if(input_provided(input$Make) & input_provided(input$Body_type)){
-      cur_df = cars[(cars$Make == input$Make)&
-                      (cars$Body_type == input$Body_type),]
+      cur_df = cars[(cars$Make %in% input$Make)&
+                      (cars$Body_type %in% input$Body_type),]
       sliderInput('Price','Price', min = min(cur_df$Price), max = max(cur_df$Price), value = c(min(cur_df$Price),max(cur_df$Price)),pre = '$', sep = ',', animate = TRUE)
     }
     else if(input_provided(input$Year) & input_provided(input$Body_type)){
-      cur_df = cars[(cars$Year == input$Year)&
-                      (cars$Body_type == input$Body_type),]
+      cur_df = cars[(cars$Year %in% input$Year)&
+                      (cars$Body_type %in% input$Body_type),]
       sliderInput('Price','Price' ,min = min(cur_df$Price), max = max(cur_df$Price), value = c(min(cur_df$Price),max(cur_df$Price)), pre = '$', sep = ',', animate = TRUE)
     }
     #三option
     else if(input_provided(input$Make) & input_provided(input$Model) &
             input_provided(input$Year)){
-      cur_df = cars[(cars$Make == input$Make)&
-                      (cars$Model == input$Model)&
-                      (cars$Year == input$Year),]
+      cur_df = cars[(cars$Make %in% input$Make)&
+                      (cars$Model  %in% input$Model)&
+                      (cars$Year %in% input$Year),]
       sliderInput('Price','Price',min = min(cur_df$Price), max = max(cur_df$Price),c(min(cur_df$Price),max(cur_df$Price)) ,pre = '$', sep = ',', animate = TRUE)
     }
     else if(input_provided(input$Make) & input_provided(input$Model) &
             input_provided(input$Body_type)){
-      cur_df = cars[(cars$Make == input$Make)&
-                      (cars$Model == input$Model)&
-                      (cars$Body_type == input$Body_type),]
+      cur_df = cars[(cars$Make %in% input$Make)&
+                      (cars$Model  %in% input$Model)&
+                      (cars$Body_type %in% input$Body_type),]
       sliderInput('Price','Price', min = min(cur_df$Price),  max = max(cur_df$Price), value =c(min(cur_df$Price),max(cur_df$Price)),pre = '$', sep = ',', animate = TRUE)
     }
     else if(input_provided(input$Make) & input_provided(input$Year) &
             input_provided(input$Body_type)){
-      cur_df = cars[(cars$Make == input$Make)&
-                      (cars$Year == input$Year)&
-                      (cars$Body_type == input$Body_type),]
+      cur_df = cars[(cars$Make %in% input$Make)&
+                      (cars$Year %in% input$Year)&
+                      (cars$Body_type %in% input$Body_type),]
       sliderInput('Price','Price', min = min(cur_df$Price), max = max(cur_df$Price),value = c(min(cur_df$Price),max(cur_df$Price)), pre = '$', sep = ',', animate = TRUE)
     }
     #四option
     else if(input_provided(input$Make) & input_provided(input$Year) &
             input_provided(input$Body_type) & input_provided(input$Model)){
-      cur_df = cars[(cars$Make == input$Make)&
-                      (cars$Model == input$Model)&
-                      (cars$Year == input$Year)&
-                      (cars$Body_type == input$Body_type),]
+      cur_df = cars[(cars$Make %in% input$Make)&
+                      (cars$Model  %in% input$Model)&
+                      (cars$Year %in% input$Year)&
+                      (cars$Body_type %in% input$Body_type),]
       sliderInput('Price','Price',min = min(cur_df$Price),  max = max(cur_df$Price),  value = min(cur_df$Price) ,pre = '$', sep = ',', animate = TRUE)
     }
     else{
@@ -310,23 +297,34 @@ server <- function(input, output) {
   
   
   
-  
-  
-  
   df<-reactive({
     get_data(input$Make,input$Model,input$Year, input$Body_type, input$Price)
   })
   
+  #input_provided(input$price) |
   output$vehicle_sub<- renderDataTable({
-    if((input_provided(input$make) == FALSE) & (input_provided(input$model) == FALSE) & 
-       (input_provided(input$body_type) == FALSE) & (input_provided(input$price) == FALSE) &
-       (input_provided(input$year) == FALSE)){
-      cars
-    }else{
+    if((input_provided(input$Make) | input_provided(input$Model)|
+       input_provided(input$Body_type)|
+       input_provided(input$Year)) == TRUE){
       df()
     }
+    else {
+      cars
+    }
+    #df()
     
   }, escape = FALSE)
+  
+  
+  output$fuel_type_selection = renderUI ({
+    if(input_provided(input$make) == FALSE){
+      selectInput('fuel_type','Fuel Type', choice = unique(cars$Fuel_type), multiple = TRUE)
+    }
+    else{
+      cur_df = cars[cars$Make %in% input$Make, ]
+      selectInput('fuel_type','Fuel Type', choice = unique(cur_df$Fuel_type), multiple = TRUE)
+    }
+  })
   
   
 }
