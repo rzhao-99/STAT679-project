@@ -444,7 +444,7 @@ server <- function(input, output) {
     if (is.null(cur_data)){
       return(NULL)
     }
-    filter(cur_data, selected2())
+    filter(select(cur_data, -X), selected2())
   })
 
 
