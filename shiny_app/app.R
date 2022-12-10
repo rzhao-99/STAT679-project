@@ -378,13 +378,19 @@ server <- function(input, output) {
 
 
   current_data1 <- reactive({
-    data <- price_data %>%
-      filter(Maker %in% input$Make)
+    if (is.null(input$Make)){
+      return(NULL)
+    }else{
+    price_data %>%
+      filter(Maker %in% input$Make)}
   })
 
   current_data2 <- reactive({
-    data <- sales_data %>%
-      filter(Maker %in% toupper(input$Make))
+    if (is.null(input$Make)){
+      return(NULL)
+    }else{
+    sales_data %>%
+      filter(Maker %in% toupper(input$Make))}
   })
 
   reset_selection <- function(x, brush) {
@@ -392,13 +398,23 @@ server <- function(input, output) {
 }
 
   output$plot1 <- renderPlot({
-    ggplot(current_data1(), aes(x=Year, y=Entry_price, col=Genmodel)) +
+    cur_data = current_data1()
+    if (is.null(cur_data)){
+      return(NULL)
+    }
+    selected1(rep(TRUE, nrow(cur_data)))
+    ggplot(cur_data, aes(x=Year, y=Entry_price, col=Genmodel)) +
       geom_line() +
       scale_x_continuous("price",breaks=c(1998,2005,2013,2021), labels=c("1998","2005","2013","2021"), limits = c(1998,2021))
   })
 
   output$plot2 <- renderPlot({
-    ggplot(current_data2(), aes(x=year, y=sales, col=Genmodel)) +
+    cur_data = current_data2()
+    if (is.null(cur_data)){
+      return(NULL)
+    }
+    selected2(rep(TRUE, nrow(cur_data)))
+    ggplot(cur_data, aes(x=year, y=sales, col=Genmodel)) +
       geom_line() +
       scale_x_continuous("sales",breaks=c(1998,2005,2013,2021), labels=c("1998","2005","2013","2021"), limits = c(1998,2021))
   })
@@ -408,19 +424,27 @@ server <- function(input, output) {
 
   observeEvent(
     input$plot1_brush,
-    selected1(reset_selection(price_data, input$plot1_brush))
+    selected1(reset_selection(current_data1(), input$plot1_brush))
   )
 
   observeEvent(
     input$plot2_brush,
-    selected2(reset_selection(sales_data, input$plot2_brush))
+    selected2(reset_selection(current_data2(), input$plot2_brush))
   )
 
   output$table1<- renderDataTable({
-    filter(price_data, selected1())
+    cur_data <- current_data1()
+    if (is.null(cur_data)){
+      return(NULL)
+    }
+    filter(cur_data, selected1())
   })
   output$table2<- renderDataTable({
-    filter(sales_data, selected2())
+    cur_data <- current_data2()
+    if (is.null(cur_data)){
+      return(NULL)
+    }
+    filter(cur_data, selected2())
   })
 
 
