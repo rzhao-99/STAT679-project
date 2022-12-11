@@ -150,12 +150,8 @@ ui <- fluidPage(
                column(9, dataTableOutput('vehicle_sub'))),
 
       tabPanel('Sales & Price Trend',
-               #selectInput("maker1","Maker for price data", maker1, multiple = TRUE),
-               #selectInput("maker2","Maker for sales data", maker2, multiple = TRUE),
-               plotOutput("plot1", brush = "plot1_brush"),
-               plotOutput("plot2", brush = "plot2_brush"),
-               dataTableOutput("table1"),
-               dataTableOutput("table2")
+               column(6,plotOutput("plot1", brush = "plot1_brush"),dataTableOutput("table1")),
+               column(6,plotOutput("plot2", brush = "plot2_brush"),dataTableOutput("table2"))
       ),
       # Insurance part
       tabPanel('Insurance Calculator', 
