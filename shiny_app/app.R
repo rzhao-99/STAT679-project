@@ -185,40 +185,40 @@ server <- function(input, output) {
   output$year_selection = renderUI({
     if (input_provided(input$Make) == TRUE){
       selectInput('Year','Year',
-                  choice = unique(cars[(cars$Make %in% input$Make),]$Year),
+                  choice = sort(unique(cars[(cars$Make %in% input$Make),]$Year)),
                   multiple = TRUE)
     }
     else if (input_provided(input$Make) & input_provided(input$Model)){
       selectInput('Year','Year',
-                  choice = unique(cars[(cars$Make %in% input$Make)&
-                                         (cars$Model  %in% input$Model),'Year']),
+                  choice = sort(unique(cars[(cars$Make %in% input$Make)&
+                                         (cars$Model  %in% input$Model),'Year'])),
                   multiple = TRUE)
       
     }
     else if (input_provided(input$Body_type)){
       selectInput('Year','Year',
-                  choice = unique(cars[(cars$Body_type %in% input$Body_type),'Year']),
+                  choice = sort(unique(cars[(cars$Body_type %in% input$Body_type),'Year'])),
                   multiple = TRUE)
       
     }
     else if(input_provided(input$Make) & input_provided(input$Body_type)){
       selectInput('Year','Year',
-                  choice = unique(cars[(cars$Make %in% input$Make)&
-                                         (cars$Body_type %in% input$Body_type),'Year']),
+                  choice = sort(unique(cars[(cars$Make %in% input$Make)&
+                                         (cars$Body_type %in% input$Body_type),'Year'])),
                   multiple = TRUE)
       
     }
     else if(input_provided(input$Make) & input_provided(input$Model) & input_provided(input$Body_type)){
       selectInput('Year','Year',
-                  choice = unique(cars[(cars$Make %in% input$Make)&
+                  choice = sort(unique(cars[(cars$Make %in% input$Make)&
                                          (cars$Model  %in% input$Model) &
-                                         (cars$Body_type %in% input$Body_type),'Year']),
+                                         (cars$Body_type %in% input$Body_type),'Year'])),
                   multiple = TRUE)
     }
     else{
-      selectInput('Year','Year',choice = unique(cars$Year),multiple = TRUE)
+      selectInput('Year','Year',choice = sort(unique(cars$Year)),multiple = TRUE)
     }
-    selectInput('Year','Year',choice = unique(cars$Year),multiple = TRUE)
+    selectInput('Year','Year',choice = sort(unique(cars$Year)),multiple = TRUE)
     
   })
   
@@ -350,6 +350,26 @@ server <- function(input, output) {
         input_provided(input$Body_type)|
         input_provided(input$Year)) == TRUE){
       df() %>% select(-Genmodel_ID)
+      if(input_provided(input$Order)){
+        if(input$Order == 'Lowest Price'){
+          df()[order(df()$Price),] %>%  select(-Genmodel_ID)
+        }
+        else if (input$Order == 'Highest Price'){
+          df()[order(-df()$Price),] %>%  select(-Genmodel_ID)
+        }
+        else if(input$Order == 'Lowest Year'){
+          df()[order(df()$Year),] %>%  select(-Genmodel_ID)
+        }
+        else if(input$Order == 'Highest Year'){
+          df()[order(-df()$Year),] %>%  select(-Genmodel_ID)
+        }
+        else if(input$Order == 'Lowest Engine Size'){
+          df()[order(df()$Engine_size),] %>%  select(-Genmodel_ID)
+        }
+        else if(input$Order == 'Highest Engine Size'){
+          df()[order(-df()$Engine_size),] %>%  select(-Genmodel_ID)
+        }
+      }
     }
     else {
       cars %>% select(-Genmodel_ID)
