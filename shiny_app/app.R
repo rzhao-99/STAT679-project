@@ -347,10 +347,10 @@ server <- function(input, output) {
     if((input_provided(input$Make) | input_provided(input$Model)|
        input_provided(input$Body_type)|
        input_provided(input$Year)) == TRUE){
-      df()
+      df() %>% select(-Genmodel_ID)
     }
     else {
-      cars
+      cars %>% select(-Genmodel_ID)
     }
     #df()
 
