@@ -33,7 +33,7 @@ states <- str_replace_all(states, "_", " ")
 createLink <- function(year, trim) {
   val = paste0(year, ' ' ,trim)
   sprintf('<a href="https://www.google.com/search?q=%s" target="_blank" class="btn btn-primary">More detail</a>',val)
-
+  
 }
 
 cars$link = createLink(cars$Year, cars$Trim)
@@ -44,7 +44,7 @@ get_data<-function(make,model,year,body_type,price,fuel_type){
   if (input_provided(make)){
     df=cars %>%
       filter(Make %in% make)
-
+    
     if (input_provided(model)){
       df=df %>%
         filter(Model %in% model)
@@ -68,7 +68,7 @@ get_data<-function(make,model,year,body_type,price,fuel_type){
     if (input_provided(year)){
       df=cars %>%
         filter(Year %in% year)
-
+      
       if (input_provided(make)){
         df=df %>%
           filter(Make %in% make)
@@ -87,7 +87,7 @@ get_data<-function(make,model,year,body_type,price,fuel_type){
     if (input_provided(body_type)){
       df=cars %>%
         filter(Body_type %in% body_type)
-
+      
       if (input_provided(year)){
         df=cars %>%
           filter(Year %in% year)
@@ -104,7 +104,7 @@ get_data<-function(make,model,year,body_type,price,fuel_type){
       return(df)
     }
   }
-
+  
   return(df)
 }
 
@@ -112,43 +112,44 @@ get_data<-function(make,model,year,body_type,price,fuel_type){
 ui <- fluidPage(
   #set title
   titlePanel("Find your dream vehicle!!!"),
-
+  
   tags$head(
     tags$style(HTML(" .shiny-output-error-validation {color: #ff0000;font-weight: bold;}"))),
-
-    column(3, wellPanel(
-      titlePanel('Basic Search'),
-      uiOutput('make_selection'),
-      uiOutput('model_selection'),
-      uiOutput('year_selection'),
-      uiOutput('slider')
-      ),
-
-      wellPanel(
-        titlePanel('Advanced Search'),
-        uiOutput('body_type_selection'),
-        uiOutput('fuel_type_selection')
-      ),
-      
-      wellPanel(
-        titlePanel("Auto Insurance query"),
-        uiOutput('age'),
-        uiOutput('gender'),
-        uiOutput('states'),
-        uiOutput('driver_record'),
-        uiOutput('credit_scores'),
-        uiOutput('ins_type'),
-        uiOutput('cc'),
-        uiOutput('model'),
-        uiOutput('Year')
-    )
-    ),
-
+  
+  column(3, wellPanel(
+    titlePanel('Basic Search'),
+    uiOutput('make_selection'),
+    uiOutput('model_selection'),
+    uiOutput('year_selection'),
+    uiOutput('slider')
+  ),
+  
+  wellPanel(
+    titlePanel('Advanced Search'),
+    uiOutput('body_type_selection'),
+    uiOutput('fuel_type_selection'),
+    uiOutput('order_selection')
+  ),
+  
+  wellPanel(
+    titlePanel("Auto Insurance query"),
+    uiOutput('age'),
+    uiOutput('gender'),
+    uiOutput('states'),
+    uiOutput('driver_record'),
+    uiOutput('credit_scores'),
+    uiOutput('ins_type'),
+    uiOutput('cc'),
+    uiOutput('model'),
+    uiOutput('Year')
+  )
+  ),
+  
   mainPanel(
     tabsetPanel(
       tabPanel('Vechile Specification',
                column(9, dataTableOutput('vehicle_sub'))),
-
+      
       tabPanel('Sales & Price Trend',
                column(6,plotOutput("plot1", brush = "plot1_brush"),dataTableOutput("table1")),
                column(6,plotOutput("plot2", brush = "plot2_brush"),dataTableOutput("table2"))
@@ -171,15 +172,15 @@ server <- function(input, output) {
   output$make_selection = renderUI({
     selectInput("Make", "Make", choices = unique(cars$Make), multiple = TRUE)
   })
-
-
+  
+  
   #model selection
   output$model_selection = renderUI({
     selectInput('Model','Model', choice = unique(cars[cars$Make %in%
                                                         input$Make,'Model']), multiple = TRUE)
   })
-
-
+  
+  
   #year selection
   output$year_selection = renderUI({
     if (input_provided(input$Make) == TRUE){
@@ -192,20 +193,20 @@ server <- function(input, output) {
                   choice = unique(cars[(cars$Make %in% input$Make)&
                                          (cars$Model  %in% input$Model),'Year']),
                   multiple = TRUE)
-
+      
     }
     else if (input_provided(input$Body_type)){
       selectInput('Year','Year',
                   choice = unique(cars[(cars$Body_type %in% input$Body_type),'Year']),
                   multiple = TRUE)
-
+      
     }
     else if(input_provided(input$Make) & input_provided(input$Body_type)){
       selectInput('Year','Year',
                   choice = unique(cars[(cars$Make %in% input$Make)&
                                          (cars$Body_type %in% input$Body_type),'Year']),
                   multiple = TRUE)
-
+      
     }
     else if(input_provided(input$Make) & input_provided(input$Model) & input_provided(input$Body_type)){
       selectInput('Year','Year',
@@ -218,10 +219,10 @@ server <- function(input, output) {
       selectInput('Year','Year',choice = unique(cars$Year),multiple = TRUE)
     }
     selectInput('Year','Year',choice = unique(cars$Year),multiple = TRUE)
-
+    
   })
-
-
+  
+  
   #body type selection
   output$body_type_selection = renderUI({
     if (input_provided(input$Make)){
@@ -253,15 +254,15 @@ server <- function(input, output) {
                                          (cars$Year %in% input$Year),]$Body_type),
                   multiple = TRUE)
     }
-
+    
     else{
       selectInput('Body_type','Body Type',
                   choice = unique(cars$Body_type), multiple = TRUE)
     }
   })
-
-
-
+  
+  
+  
   #Slider input for price
   output$slider = renderUI({
     #单一option
@@ -333,30 +334,50 @@ server <- function(input, output) {
       sliderInput('Price','Price',min = min(cars$Price),
                   max = max(cars$Price), value = c(min(cars$Price),max(cars$Price)) , pre = '$', sep = ',', animate = TRUE)
     }
-
+    
   })
-
-
-
+  
+  
+  
   df<-reactive({
     get_data(input$Make,input$Model,input$Year, input$Body_type, input$Price,input$fuel)
   })
+  
 
-  #input_provided(input$price) |
+  
   output$vehicle_sub<- renderDataTable({
     if((input_provided(input$Make) | input_provided(input$Model)|
-       input_provided(input$Body_type)|
-       input_provided(input$Year)) == TRUE){
+        input_provided(input$Body_type)|
+        input_provided(input$Year)) == TRUE){
       df() %>% select(-Genmodel_ID)
     }
     else {
       cars %>% select(-Genmodel_ID)
+      if(input_provided(input$Order)){
+        if(input$Order == 'Lowest Price'){
+          cars[order(cars$Price),] %>%  select(-Genmodel_ID)
+        }
+        else if (input$Order == 'Highest Price'){
+          cars[order(-cars$Price),] %>%  select(-Genmodel_ID)
+        }
+        else if(input$Order == 'Lowest Year'){
+          cars[order(cars$Year),] %>%  select(-Genmodel_ID)
+        }
+        else if(input$Order == 'Highest Year'){
+          cars[order(-cars$Year),] %>%  select(-Genmodel_ID)
+        }
+        else if(input$Order == 'Lowest Engine Size'){
+          cars[order(cars$Engine_size),] %>%  select(-Genmodel_ID)
+        }
+        else if(input$Order == 'Highest Engine Size'){
+          cars[order(-cars$Engine_size),] %>%  select(-Genmodel_ID)
+        }
+      }
     }
-    #df()
-
+    
   }, escape = FALSE)
-
-
+  
+  
   output$fuel_type_selection = renderUI ({
     if(input_provided(input$Make) == FALSE){
       selectInput('fuel','Fuel Type', choice = unique(cars$Fuel_type), multiple = TRUE)
@@ -366,33 +387,37 @@ server <- function(input, output) {
       selectInput('fuel','Fuel Type', choice = unique(cur_df$Fuel_type), multiple = TRUE)
     }
   })
-
-
+  
+  output$order_selection = renderUI({
+    selectInput('Order', 'Sort By', choice = c('Lowest Price','Highest Price','Lowest Year', 'Highest Year','Lowest Engine Size','Highest Engine Size'))
+  })
+  
+  
   #------------------------------------Specification----------------------------------#
-
+  
   #------------------------------------Sales & Price Trend----------------------------------#
-
-
+  
+  
   current_data1 <- reactive({
     if (is.null(input$Make)){
       return(NULL)
     }else{
-    price_data %>%
-      filter(Maker %in% input$Make)}
+      price_data %>%
+        filter(Maker %in% input$Make)}
   })
-
+  
   current_data2 <- reactive({
     if (is.null(input$Make)){
       return(NULL)
     }else{
-    sales_data %>%
-      filter(Maker %in% toupper(input$Make))}
+      sales_data %>%
+        filter(Maker %in% toupper(input$Make))}
   })
-
+  
   reset_selection <- function(x, brush) {
-  brushedPoints(x, brush, allRows = TRUE)$selected_
-}
-
+    brushedPoints(x, brush, allRows = TRUE)$selected_
+  }
+  
   output$plot1 <- renderPlot({
     cur_data = current_data1()
     if (is.null(cur_data)){
@@ -403,7 +428,7 @@ server <- function(input, output) {
       geom_line() +
       scale_x_continuous("price",breaks=c(1998,2005,2013,2021), labels=c("1998","2005","2013","2021"), limits = c(1998,2021))
   })
-
+  
   output$plot2 <- renderPlot({
     cur_data = current_data2()
     if (is.null(cur_data)){
@@ -414,20 +439,20 @@ server <- function(input, output) {
       geom_line() +
       scale_x_continuous("sales",breaks=c(1998,2005,2013,2021), labels=c("1998","2005","2013","2021"), limits = c(1998,2021))
   })
-
+  
   selected1 <- reactiveVal(rep(TRUE, nrow(price_data)))
   selected2 <- reactiveVal(rep(TRUE, nrow(sales_data)))
-
+  
   observeEvent(
     input$plot1_brush,
     selected1(reset_selection(current_data1(), input$plot1_brush))
   )
-
+  
   observeEvent(
     input$plot2_brush,
     selected2(reset_selection(current_data2(), input$plot2_brush))
   )
-
+  
   output$table1<- renderDataTable({
     cur_data <- current_data1()
     if (is.null(cur_data)){
@@ -442,10 +467,10 @@ server <- function(input, output) {
     }
     filter(select(cur_data, -X), selected2())
   })
-
-
+  
+  
   #------------------------------------Sales & Price Trend----------------------------------#
-
+  
   #---------------------------------------   Insurance    ----------------------------------#
   output$age = renderUI({
     sliderInput("tree_age", "Age:", min=18, max=99, value = 25, step=1)
@@ -457,7 +482,7 @@ server <- function(input, output) {
       "Female" = "F"
     ))
   })
-    
+  
   output$states = renderUI({
     selectInput("tree_states", "State:", states, selected="Wisconsin")
   })
@@ -468,10 +493,10 @@ server <- function(input, output) {
   
   output$credit_scores = renderUI({
     selectInput("tree_credit_scores", tags$span("Credit Score:",
-                                           tags$i(
-                                             class = "glyphicon glyphicon-info-sign", 
-                                             style = "color:#0072B2;",
-                                             title = "Your credit scores would fall into one of the following bands:\n
+                                                tags$i(
+                                                  class = "glyphicon glyphicon-info-sign", 
+                                                  style = "color:#0072B2;",
+                                                  title = "Your credit scores would fall into one of the following bands:\n
 Excellent: 810+
 Good: 750-809
 Fair: 690-749
@@ -487,10 +512,10 @@ Poor: 300-599")),
   
   output$ins_type = renderUI({
     selectInput("tree_ins_type",tags$span("Liability Insurance:",
-                                     tags$i(
-                                       class = "glyphicon glyphicon-info-sign", 
-                                       style = "color:#0072B2;",
-                                       title = "Liability insurance covers medical and legal fees for which you've been held responsible after a carcrash.\n
+                                          tags$i(
+                                            class = "glyphicon glyphicon-info-sign", 
+                                            style = "color:#0072B2;",
+                                            title = "Liability insurance covers medical and legal fees for which you've been held responsible after a carcrash.\n
 Example liability limits of 50/100/50 mean: 
 $50,000 in bodily injury insurance per person.
 $100,000 in bodily injury insurance per accident.
@@ -512,7 +537,7 @@ $50,000 in property damage insurance peraccident.
   output$Year = renderUI({
     selectInput("tree_Year", "Vehicle Year:", seq(2005,2021,1), 2018)
   })
-    
+  
   
   # INPUT 
   
@@ -572,7 +597,7 @@ $50,000 in property damage insurance peraccident.
   #   k = result$modelYear[[i]]
   #   all_models = c(all_models, k$type)
   # }
-
+  
   
   find_car_inf <- function(result, model, year){
     year = as.character(year)
